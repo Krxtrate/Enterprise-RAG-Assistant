@@ -5,13 +5,12 @@ import "./App.css";
 function App() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [uploadedFile, setUploadedFile] = useState("");
 
   const [messages, setMessages] = useState([
     {
       role: "assistant",
       content:
-        "Hello! I am the AI assistant for AdCounty Media. Ask me anything 🚀",
+        "Hello! I am the AI assistant for ABC. Ask me anything 🚀",
     },
   ]);
 
@@ -23,58 +22,17 @@ function App() {
     });
   }, [messages]);
 
-  const handleFileUpload = async (e) => {
-    const file = e.target.files[0];
-
-    if (!file) return;
-
-    if (!file.name.toLowerCase().endsWith(".pdf")) {
-      alert("Please upload a PDF file.");
-      return;
-    }
-
-    const formData = new FormData();
-    formData.append("file", file);
-
-    try {
-      await axios.post(
-        "http://127.0.0.1:8000/upload",
-        formData
-      );
-
-      setUploadedFile(file.name);
-
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: `📄 Document uploaded successfully: ${file.name}`,
-        },
-      ]);
-    } catch (error) {
-      console.error(error);
-
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: "❌ PDF upload failed.",
-        },
-      ]);
-    }
-  };
 
   const newChat = () => {
     setMessages([
       {
         role: "assistant",
         content:
-          "Hello! I am the AI assistant for AdCounty Media. Ask me anything 🚀",
+          "Hello! I am the AI assistant for ABC. Ask me anything 🚀",
       },
     ]);
 
     setInput("");
-    setUploadedFile("");
   };
 
   const generate = async () => {
@@ -133,6 +91,7 @@ function App() {
           ...prev,
           {
             role: "assistant",
+            content: "[Generated Image]",
             image: response.data.image,
           },
         ]);
@@ -181,40 +140,18 @@ function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <h2>🤖 AI</h2>
-
+        <h2>🤖 Your AI Assistant</h2>
         <button
           className="new-chat"
           onClick={newChat}
         >
           + New Chat
         </button>
-
-        <div className="file-box">
-          <h3>📄 Document</h3>
-
-          {uploadedFile ? (
-            <p>{uploadedFile}</p>
-          ) : (
-            <p>No document uploaded</p>
-          )}
-        </div>
-
-        <label className="upload-btn">
-          Upload PDF
-
-          <input
-            type="file"
-            accept=".pdf"
-            onChange={handleFileUpload}
-            hidden
-          />
-        </label>
       </div>
 
       <div className="main">
         <div className="header">
-          <h1>🚀 AdCounty Media AI</h1>
+          <h1>🚀 ABC AI</h1>
           <p>Enterprise Knowledge Assistant</p>
         </div>
 

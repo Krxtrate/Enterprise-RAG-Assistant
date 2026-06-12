@@ -1,0 +1,2868 @@
+{
+"body": {
+"user_says": [
+{
+"text": "it s very bad jokes",
+"active": true
+},
+{
+"text": "boring jokes",
+"active": true
+},
+{
+"text": "seriously bad jokes",
+"active": true
+},
+{
+"text": "you send too boring jokes",
+"active": true
+},
+{
+"text": "bad joke",
+"active": true
+},
+{
+"text": "fucking joke",
+"active": true
+},
+{
+"text": "bad jokes please",
+"active": true
+},
+{
+"text": "bad jokes",
+"active": true
+},
+{
+"text": "poor jokes",
+"active": true
+},
+{
+"text": "so bad jokes i hate you",
+"active": true
+},
+{
+"text": "you are too bad at jokes",
+"active": true
+},
+{
+"text": "poor joke",
+"active": true
+},
+{
+"text": "boring joke",
+"active": true
+},
+{
+"text": "its a very bad joke by the way",
+"active": true
+},
+{
+"text": "very bad joke",
+"active": true
+},
+{
+"text": "very bad jokes",
+"active": true
+},
+{
+"text": "very lame and boring jokes",
+"active": true
+},
+{
+"text": "really bad joke",
+"active": true
+},
+{
+"text": "worst joke",
+"active": true
+},
+{
+"text": "sad joke",
+"active": true
+},
+{
+"text": "these are very bad jokes",
+"active": true
+},
+{
+"text": "very boring jokes",
+"active": true
+},
+{
+"text": "worst joke never read",
+"active": true
+},
+{
+"text": "this is a pj",
+"active": true
+},
+{
+"text": "this is worst joke",
+"active": true
+},
+{
+"text": "too poor jokes",
+"active": true
+},
+{
+"text": "its a pj",
+"active": true
+}
+],
+"bot_says": {
+"en": {
+"en": [
+{
+"id": "666941acf4d23a8e4f2e36ce",
+"text": "I'm sorry. I'll try to be funnier next time."
+}
+]
+},
+"af": {
+"af": [
+{
+"id": "667eb67af4d23a87c3e99d2f",
+"text": "\"Ek is bekend daarvoor dat ek snaaks is, maar ek sal meer aan my sin vir humor werk.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d90",
+"text": "\"Ek sal dit hierdie keer vat, maar ek belowe ek sal volgende keer snaakser wees.\""
+},
+{
+"id": "667eb67af4d23a87c3e99df1",
+"text": "Regtig! Ek het gedink ek is regtig snaaks . Ek sal volgende keer probeer om snaakser te wees ."
+},
+{
+"id": "667eb67af4d23a87c3e99e52",
+"text": "\"Klop Klop, wie is daar? <m>Jy <m>Jy Wie? <m>Jyhoooooo ek is weer snaaks .\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb3",
+"text": "Ek is jammer . Ek sal volgende keer probeer om snaakser te wees ."
+},
+{
+"id": "667eb67af4d23a87c3e99f14",
+"text": "Ek is jammer . Ek sal volgende keer daaraan werk om snaakser te wees ."
+}
+]
+},
+"sq": {
+"sq": [
+{
+"id": "667eb67af4d23a87c3e99d30",
+"text": "\"Unë jam i njohur si qesharak, por do të punoj më shumë për sensin tim të humorit.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d91",
+"text": "\"Do ta marr këtë herë, por premtoj se herën tjetër do të jem më qesharak.\""
+},
+{
+"id": "667eb67af4d23a87c3e99df2",
+"text": "Vërtet! Mendova se isha vërtet qesharake. Do të përpiqem të jem më qesharak herën tjetër."
+},
+{
+"id": "667eb67af4d23a87c3e99e53",
+"text": "\"Knock Knock, kush është atje? <m>Ti <m>Ti kush? <m>Juhoooooo unë jam përsëri qesharak.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb4",
+"text": "Më vjen keq . Do të përpiqem të jem më qesharak herën tjetër."
+},
+{
+"id": "667eb67af4d23a87c3e99f15",
+"text": "Më falni. Do të punoj që herën tjetër të jem më qesharak."
+}
+]
+},
+"am": {
+"am": [
+{
+"id": "667eb67af4d23a87c3e99d31",
+"text": "\"ቀልደኛ እንደሆንኩ አውቃለሁ፣ ነገር ግን ቀልዴን የበለጠ እሰራለሁ።\""
+},
+{
+"id": "667eb67af4d23a87c3e99d92",
+"text": "\"በዚህ ጊዜ እወስዳለሁ, ግን በሚቀጥለው ጊዜ የበለጠ አስቂኝ እንደምሆን ቃል እገባለሁ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99df3",
+"text": "በእውነት! የምር አስቂኝ ነኝ ብዬ አሰብኩ። በሚቀጥለው ጊዜ የበለጠ አስቂኝ ለመሆን እሞክራለሁ።"
+},
+{
+"id": "667eb67af4d23a87c3e99e54",
+"text": "\" ኖክ ኖክ ማን አለ? <m>አንተ <m>አንተ ማን? <m>Youhoooooo እንደገና አስቂኝ ነኝ።\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb5",
+"text": "ይቅርታ . በሚቀጥለው ጊዜ የበለጠ አስቂኝ ለመሆን እሞክራለሁ።"
+},
+{
+"id": "667eb67af4d23a87c3e99f16",
+"text": "ይቅርታ . በሚቀጥለው ጊዜ ይበልጥ አስቂኝ ለመሆን እሰራለሁ."
+}
+]
+},
+"ar": {
+"ar": [
+{
+"id": "667eb67af4d23a87c3e99d32",
+"text": "\"أنا معروف بكوني مضحكة ، لكنني سأعمل على حس الدعابة أكثر.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d93",
+"text": "\"سآخذها هذه المرة ، لكنني أعدك بأنني سأكون أكثر مرحًا في المرة القادمة.\""
+},
+{
+"id": "667eb67af4d23a87c3e99df4",
+"text": "حقًا! اعتقدت أنني كنت حقا مضحك. سأحاول أن أكون أكثر تسلية في المرة القادمة."
+},
+{
+"id": "667eb67af4d23a87c3e99e55",
+"text": "\"Knock Knock ، من هناك؟ <m> أنت <m> أنت من؟ <m> Youhoooooo أنا مضحك مرة أخرى.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb6",
+"text": "أنا آسف . سأحاول أن أكون أكثر تسلية في المرة القادمة."
+},
+{
+"id": "667eb67af4d23a87c3e99f17",
+"text": "اعتذاري . سأعمل على أن أكون أكثر تسلية في المرة القادمة."
+}
+]
+},
+"hy": {
+"hy": [
+{
+"id": "667eb67af4d23a87c3e99d33",
+"text": "«Ես հայտնի եմ որպես զվարճալի, բայց ես ավելի շատ կաշխատեմ իմ հումորի զգացողության վրա»:"
+},
+{
+"id": "667eb67af4d23a87c3e99d94",
+"text": "«Այս անգամ կվերցնեմ, բայց խոստանում եմ, որ հաջորդ անգամ ավելի զվարճալի կլինեմ»:"
+},
+{
+"id": "667eb67af4d23a87c3e99df5",
+"text": "Իսկապես։ Ես մտածեցի, որ իսկապես ծիծաղելի էի: Հաջորդ անգամ կփորձեմ ավելի զվարճալի լինել:"
+},
+{
+"id": "667eb67af4d23a87c3e99e56",
+"text": "«Knock Knock, ով է այնտեղ: <m>Դուք <m>Դուք Ո՞վ:"
+},
+{
+"id": "667eb67af4d23a87c3e99eb7",
+"text": "Կներես . Հաջորդ անգամ կփորձեմ ավելի զվարճալի լինել:"
+},
+{
+"id": "667eb67af4d23a87c3e99f18",
+"text": "Ներողություն . Ես կաշխատեմ հաջորդ անգամ ավելի զվարճալի լինել:"
+}
+]
+},
+"az": {
+"az": [
+{
+"id": "667eb67af4d23a87c3e99d34",
+"text": "\"Mən gülməli olduğumu bilirəm, amma daha çox yumor hissim üzərində işləyəcəm.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d95",
+"text": "\"Bu dəfə qəbul edəcəyəm, amma söz verirəm ki, növbəti dəfə daha gülməli olacağam.\""
+},
+{
+"id": "667eb67af4d23a87c3e99df6",
+"text": "Həqiqətən! Mən həqiqətən gülməli olduğumu düşündüm. Növbəti dəfə daha gülməli olmağa çalışacağam."
+},
+{
+"id": "667eb67af4d23a87c3e99e57",
+"text": "\"Knock Knock, Kim var? <m>Sən <m>Sən Kimsən? <m>Youhoooooo mən yenə gülməliyəm.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb8",
+"text": "Bağışlayın . Növbəti dəfə daha gülməli olmağa çalışacağam."
+},
+{
+"id": "667eb67af4d23a87c3e99f19",
+"text": "Üzr istəyirəm. Növbəti dəfə daha gülməli olmağa çalışacağam."
+}
+]
+},
+"eu": {
+"eu": [
+{
+"id": "667eb67af4d23a87c3e99d35",
+"text": "\"Dibertigarria naizela ezaguna naiz, baina umorea gehiago landuko dut\"."
+},
+{
+"id": "667eb67af4d23a87c3e99d96",
+"text": "\"Oraingoan hartuko dut, baina hurrengoan barregarriagoa izango naizela agintzen dut\"."
+},
+{
+"id": "667eb67af4d23a87c3e99df7",
+"text": "Benetan! Benetan barregarria nintzela uste nuen. Hurrengoan barregarriagoa izaten saiatuko naiz."
+},
+{
+"id": "667eb67af4d23a87c3e99e58",
+"text": "\"Knock Knock, Who is There? <m>Zu <m>Zuk Nor? <m>Youhoooooo berriro barregarria naiz.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eb9",
+"text": "Barkatu . Hurrengoan barregarriagoa izaten saiatuko naiz."
+},
+{
+"id": "667eb67af4d23a87c3e99f1a",
+"text": "Nire barkamenak. Hurrengoan dibertigarriagoa izateko lan egingo dut."
+}
+]
+},
+"be": {
+"be": [
+{
+"id": "667eb67af4d23a87c3e99d36",
+"text": "«Вядома, што я смешны, але я буду больш працаваць над сваім пачуццём гумару»."
+},
+{
+"id": "667eb67af4d23a87c3e99d97",
+"text": "«Я вазьму гэта на гэты раз, але я абяцаю, што ў наступны раз буду смешней»."
+},
+{
+"id": "667eb67af4d23a87c3e99df8",
+"text": "Сапраўды! Я думаў, што я сапраўды смешны. У наступны раз я паспрабую быць весялейшым."
+},
+{
+"id": "667eb67af4d23a87c3e99e59",
+"text": "\"Тук-тук, хто там? <m>Ты <m>Ты хто? <m>Тыоооооо, я зноў смешны\"."
+},
+{
+"id": "667eb67af4d23a87c3e99eba",
+"text": "прабачце . У наступны раз я паспрабую быць весялейшым."
+},
+{
+"id": "667eb67af4d23a87c3e99f1b",
+"text": "Мае выбачэнні . Я буду працаваць над тым, каб у наступны раз быць весялейшым."
+}
+]
+},
+"bn": {
+"bn": [
+{
+"id": "667eb67af4d23a87c3e99d37",
+"text": "\"আমি মজার বলে পরিচিত, তবে আমি আমার হাস্যরসের বিষয়ে আরও কাজ করব।\""
+},
+{
+"id": "667eb67af4d23a87c3e99d98",
+"text": "\"আমি এইবার এটা নেব, কিন্তু আমি প্রতিশ্রুতি দিচ্ছি যে আমি পরের বার আরও মজাদার হব।\""
+},
+{
+"id": "667eb67af4d23a87c3e99df9",
+"text": "সত্যিই! আমি ভেবেছিলাম আমি সত্যিই মজার ছিলাম। আমি পরের বার মজাদার হতে চেষ্টা করব."
+},
+{
+"id": "667eb67af4d23a87c3e99e5a",
+"text": "\"নক নক, কে আছে? <m>তুমি <m>ইউ কে? <m>Youhoooooo আমি আবার মজার।\""
+},
+{
+"id": "667eb67af4d23a87c3e99ebb",
+"text": "আমি দুঃখিত . আমি পরের বার মজাদার হতে চেষ্টা করব."
+},
+{
+"id": "667eb67af4d23a87c3e99f1c",
+"text": "আমার ক্ষমাপ্রার্থী আমি পরের বার মজাদার হতে কাজ করব."
+}
+]
+},
+"bs": {
+"bs": [
+{
+"id": "667eb67af4d23a87c3e99d38",
+"text": "\"Poznato sam da sam duhovit, ali radiću više na svom smislu za humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d99",
+"text": "\"Ovaj put ću uzeti, ali obećavam da ću sljedeći put biti zabavniji.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dfa",
+"text": "Zaista! Mislio sam da sam zaista duhovit. Pokušaću da budem smešniji sledeći put."
+},
+{
+"id": "667eb67af4d23a87c3e99e5b",
+"text": "\"Knock Knock, Who's There? <m>Ti <m>Ti ko? <m>Youhoooooo, opet sam duhovit .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ebc",
+"text": "Žao mi je . Pokušaću da budem smešniji sledeći put."
+},
+{
+"id": "667eb67af4d23a87c3e99f1d",
+"text": "Moje izvinjenje . Radiću na tome da sledeći put budem smješniji."
+}
+]
+},
+"bg": {
+"bg": [
+{
+"id": "667eb67af4d23a87c3e99d39",
+"text": "„Известно е, че съм забавен, но ще работя повече върху чувството си за хумор.“"
+},
+{
+"id": "667eb67af4d23a87c3e99d9a",
+"text": "„Този път ще го приема, но обещавам, че следващия път ще бъда по-забавен.“"
+},
+{
+"id": "667eb67af4d23a87c3e99dfb",
+"text": "Наистина ли! Мислех, че съм наистина смешен. Ще се опитам да бъда по-забавен следващия път."
+},
+{
+"id": "667eb67af4d23a87c3e99e5c",
+"text": "„Чук, чук, кой е там? <m>Ти <m>Ти кой? <m>Тиоооооо, пак съм забавен.“"
+},
+{
+"id": "667eb67af4d23a87c3e99ebd",
+"text": "Съжалявам . Ще се опитам да бъда по-забавен следващия път."
+},
+{
+"id": "667eb67af4d23a87c3e99f1e",
+"text": "Моите извинения . Ще работя да бъда по-забавен следващия път."
+}
+]
+},
+"ca": {
+"ca": [
+{
+"id": "667eb67af4d23a87c3e99d3a",
+"text": "\"Se sap que sóc divertit, però treballaré més el meu sentit de l'humor\"."
+},
+{
+"id": "667eb67af4d23a87c3e99d9b",
+"text": "\"Aquesta vegada ho agafaré, però prometo que seré més divertit la propera vegada\"."
+},
+{
+"id": "667eb67af4d23a87c3e99dfc",
+"text": "De veritat! Vaig pensar que era molt divertit. Intentaré ser més divertit la propera vegada."
+},
+{
+"id": "667eb67af4d23a87c3e99e5d",
+"text": "\"Toc Toc, qui hi ha? <m>Tu <m>Tu qui? <m>Tu hooooooo sóc divertit de nou.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ebe",
+"text": "Ho sento . Intentaré ser més divertit la propera vegada."
+},
+{
+"id": "667eb67af4d23a87c3e99f1f",
+"text": "Les meves disculpes . Treballaré per ser més divertit la propera vegada."
+}
+]
+},
+"zh-CN": {
+"zh-CN": [
+{
+"id": "667eb67af4d23a87c3e99d3b",
+"text": "“众所周知，我很有趣，但我会更多地锻炼我的幽默感。”"
+},
+{
+"id": "667eb67af4d23a87c3e99d9c",
+"text": "“这次我会接受，但我保证下次我会更有趣。”"
+},
+{
+"id": "667eb67af4d23a87c3e99dfd",
+"text": "真的！我觉得我真的很有趣。下次我会努力变得更有趣。"
+},
+{
+"id": "667eb67af4d23a87c3e99e5e",
+"text": "“敲敲，谁在那儿？<m>你<m>你是谁？<m>Youhoooooo我又搞笑了。”"
+},
+{
+"id": "667eb67af4d23a87c3e99ebf",
+"text": "对不起 。下次我会努力变得更有趣。"
+},
+{
+"id": "667eb67af4d23a87c3e99f20",
+"text": "我很抱歉 。下次我会努力变得更有趣。"
+}
+]
+},
+"co": {
+"co": [
+{
+"id": "667eb67af4d23a87c3e99d3c",
+"text": "\"Sò cunnisciutu per esse divertente, ma aghju da travaglià più nantu à u mo sensu di l'umuri\"."
+},
+{
+"id": "667eb67af4d23a87c3e99d9d",
+"text": "\"U pigliu sta volta, ma prumessu chì serà più divertente a prossima volta\"."
+},
+{
+"id": "667eb67af4d23a87c3e99dfe",
+"text": "Veramente! Pensu chì era veramente divertente. Pruvaraghju di esse più divertente a prossima volta."
+},
+{
+"id": "667eb67af4d23a87c3e99e5f",
+"text": "\"Knock Knock, Who's There? <m>Tu <m>Tu Quale? <m>Youhoooooo Sò di novu divertente."
+},
+{
+"id": "667eb67af4d23a87c3e99ec0",
+"text": "Scusa . Pruvaraghju di esse più divertente a prossima volta."
+},
+{
+"id": "667eb67af4d23a87c3e99f21",
+"text": "E mo scuse. Travaglieraghju per esse più divertente a prossima volta."
+}
+]
+},
+"hr": {
+"hr": [
+{
+"id": "667eb67af4d23a87c3e99d3d",
+"text": "\"Poznato je da sam duhovit, ali ću više raditi na svom smislu za humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d9e",
+"text": "\"Ovaj put ću prihvatiti, ali obećavam da ću sljedeći put biti smješniji.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dff",
+"text": "Stvarno! Mislio sam da sam stvarno smiješan. Pokušat ću biti smješniji sljedeći put."
+},
+{
+"id": "667eb67af4d23a87c3e99e60",
+"text": "\"Kuc kuc, tko je tamo? <m>Ti <m>Ti tko? <m>Tihoooooo opet sam smiješan.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec1",
+"text": "Žao mi je . Pokušat ću biti smješniji sljedeći put."
+},
+{
+"id": "667eb67af4d23a87c3e99f22",
+"text": "Moje isprike . Radit ću na tome da sljedeći put budem smješniji."
+}
+]
+},
+"cs": {
+"cs": [
+{
+"id": "667eb67af4d23a87c3e99d3e",
+"text": "\"Ví se o mně, že jsem vtipný, ale budu více pracovat na svém smyslu pro humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99d9f",
+"text": "\"Tentokrát to vezmu, ale slibuji, že příště budu vtipnější.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e00",
+"text": "Opravdu! Myslel jsem, že jsem opravdu vtipný. Příště se pokusím být vtipnější."
+},
+{
+"id": "667eb67af4d23a87c3e99e61",
+"text": "\"Ťuk ťuk, kdo je tam? <m>Ty <m>Ty kdo? <m>Tyhoooooo já jsem zase vtipný.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec2",
+"text": "Omlouvám se . Příště se pokusím být vtipnější."
+},
+{
+"id": "667eb67af4d23a87c3e99f23",
+"text": "Omlouvám se . Příště budu pracovat na tom, abych byl vtipnější."
+}
+]
+},
+"da": {
+"da": [
+{
+"id": "667eb67af4d23a87c3e99d3f",
+"text": "\"Jeg er kendt for at være sjov, men jeg vil arbejde mere på min humoristiske sans.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da0",
+"text": "\"Jeg tager det denne gang, men jeg lover, at jeg bliver sjovere næste gang.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e01",
+"text": "Virkelig! Jeg syntes jeg var rigtig sjov. Jeg vil prøve at være sjovere næste gang."
+},
+{
+"id": "667eb67af4d23a87c3e99e62",
+"text": "\"Knock Knock, hvem er der? <m>Du <m>Du Hvem? <m>Youhoooooo jeg er sjov igen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec3",
+"text": "Undskyld . Jeg vil prøve at være sjovere næste gang."
+},
+{
+"id": "667eb67af4d23a87c3e99f24",
+"text": "Undskyld . Jeg vil arbejde på at være sjovere næste gang."
+}
+]
+},
+"nl": {
+"nl": [
+{
+"id": "667eb67af4d23a87c3e99d40",
+"text": "\"Ik sta bekend als grappig, maar ik zal meer aan mijn gevoel voor humor werken.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da1",
+"text": "\"Ik zal het deze keer nemen, maar ik beloof dat ik de volgende keer grappiger zal zijn.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e02",
+"text": "Werkelijk! Ik dacht dat ik echt grappig was. Ik zal de volgende keer proberen grappiger te zijn."
+},
+{
+"id": "667eb67af4d23a87c3e99e63",
+"text": "\"Klop Klop, wie is daar? <m>Jij <m>Jij Who? <m>Youhoooooo ik ben weer grappig .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec4",
+"text": "Mijn excuses . Ik zal de volgende keer proberen grappiger te zijn."
+},
+{
+"id": "667eb67af4d23a87c3e99f25",
+"text": "Mijn verontschuldigingen . De volgende keer zal ik eraan werken om grappiger te zijn."
+}
+]
+},
+"eo": {
+"eo": [
+{
+"id": "667eb67af4d23a87c3e99d41",
+"text": "\"Mi scias, ke mi estas amuza, sed mi pli laboros pri mia sento de humuro.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da2",
+"text": "\"Mi prenos ĝin ĉi-foje, sed mi promesas, ke mi estos pli amuza la venontan fojon.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e03",
+"text": "Vere! Mi pensis, ke mi estas vere amuza. Venontfoje mi provos esti pli amuza."
+},
+{
+"id": "667eb67af4d23a87c3e99e64",
+"text": "\"Knock-Knock, Kiu estas Tie? <m>Vi <m>Vi Kiu? <m>Vihoooooo Mi estas amuza denove.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec5",
+"text": "Mi bedaŭras . Venontfoje mi provos esti pli amuza."
+},
+{
+"id": "667eb67af4d23a87c3e99f26",
+"text": "Mi pardonpetas . Mi laboros por esti pli amuza venontfoje."
+}
+]
+},
+"et": {
+"et": [
+{
+"id": "667eb67af4d23a87c3e99d42",
+"text": "\"Olen teadaolevalt naljakas, kuid ma töötan rohkem oma huumorimeelega.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da3",
+"text": "\"Seekord võtan selle vastu, aga luban, et järgmine kord olen naljakam.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e04",
+"text": "Tõesti! Ma arvasin, et olen tõesti naljakas. Püüan järgmine kord naljakam olla."
+},
+{
+"id": "667eb67af4d23a87c3e99e65",
+"text": "\"Knock Knock, kes seal on? <m>Sina <m>Sina, kes? <m>Ohooooo, ma olen jälle naljakas .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec6",
+"text": "Mul on kahju . Püüan järgmine kord naljakam olla."
+},
+{
+"id": "667eb67af4d23a87c3e99f27",
+"text": "Minu vabandused . Järgmine kord püüan olla naljakam."
+}
+]
+},
+"fi": {
+"fi": [
+{
+"id": "667eb67af4d23a87c3e99d43",
+"text": "\"Minun tiedetään olevan hauska, mutta aion kehittää huumorintajuani enemmän.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da4",
+"text": "\"Otan sen tällä kertaa, mutta lupaan olla hauskempi ensi kerralla.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e05",
+"text": "Todella! Luulin olevani todella hauska. Yritän olla hauskempi ensi kerralla."
+},
+{
+"id": "667eb67af4d23a87c3e99e66",
+"text": "\"Knock Knock, kuka on siellä? <m>Sinä <m>Sinä kuka? <m>Juuhuu, olen taas hauska.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec7",
+"text": "Olen pahoillani . Yritän olla hauskempi ensi kerralla."
+},
+{
+"id": "667eb67af4d23a87c3e99f28",
+"text": "Pahoitteluni . Yritän olla hauskempi ensi kerralla."
+}
+]
+},
+"fr": {
+"fr": [
+{
+"id": "667eb67af4d23a87c3e99d44",
+"text": "\"Je suis connu pour être drôle, mais je travaillerai davantage mon sens de l'humour.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da5",
+"text": "\"Je vais le prendre cette fois, mais je promets que je serai plus drôle la prochaine fois.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e06",
+"text": "Vraiment! Je pensais que j'étais vraiment drôle. J'essaierai d'être plus drôle la prochaine fois."
+},
+{
+"id": "667eb67af4d23a87c3e99e67",
+"text": "« Toc toc, qui est là ? <m>Toi <m>Toi qui ? <m>Youhoooooo je suis encore drôle."
+},
+{
+"id": "667eb67af4d23a87c3e99ec8",
+"text": "Je suis désolé . J'essaierai d'être plus drôle la prochaine fois."
+},
+{
+"id": "667eb67af4d23a87c3e99f29",
+"text": "Mes excuses . Je travaillerai pour être plus drôle la prochaine fois."
+}
+]
+},
+"fy": {
+"fy": [
+{
+"id": "667eb67af4d23a87c3e99d45",
+"text": "\"It is bekend dat ik grappich bin, mar ik sil mear wurkje oan myn gefoel foar humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99da6",
+"text": "\"Ik sil it dizze kear nimme, mar ik beloof dat ik de folgjende kear grappiger sil wêze.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e07",
+"text": "Werklik! Ik tocht dat ik echt grappich wie. Ik sil besykje de folgjende kear grappiger te wêzen."
+},
+{
+"id": "667eb67af4d23a87c3e99e68",
+"text": "\"Knock Knock, wa is der? <m>Jo <m>Jo dy't? <m>Youhoooooo ik bin wer grappich.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ec9",
+"text": "It spyt my . Ik sil besykje de folgjende kear grappiger te wêzen."
+},
+{
+"id": "667eb67af4d23a87c3e99f2a",
+"text": "Myn ekskúses . Ik sil wurkje om de folgjende kear grappiger te wêzen."
+}
+]
+},
+"gl": {
+"gl": [
+{
+"id": "667eb67af4d23a87c3e99d46",
+"text": "\"Sábese que son divertido, pero traballarei máis no meu sentido do humor\"."
+},
+{
+"id": "667eb67af4d23a87c3e99da7",
+"text": "\"Aceptareino esta vez, pero prometo que serei máis divertido a próxima vez\"."
+},
+{
+"id": "667eb67af4d23a87c3e99e08",
+"text": "De verdade! Pensei que era moi divertido. Tentarei ser máis divertido a próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99e69",
+"text": "\"Toc Toc, quen está aí? <m>Ti <m>Ti quen? <m>Youhoooooo Estou divertido de novo\"."
+},
+{
+"id": "667eb67af4d23a87c3e99eca",
+"text": "Síntoo . Tentarei ser máis divertido a próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99f2b",
+"text": "As miñas desculpas . Vou traballar para ser máis divertido a próxima vez."
+}
+]
+},
+"ka": {
+"ka": [
+{
+"id": "667eb67af4d23a87c3e99d47",
+"text": "ცნობილია, რომ მხიარული ვარ, მაგრამ უფრო მეტად ვიმუშავებ იუმორის გრძნობაზე."
+},
+{
+"id": "667eb67af4d23a87c3e99da8",
+"text": "\"ამჯერად ავიღებ, მაგრამ გპირდები, რომ შემდეგ ჯერზე უფრო მხიარული ვიქნები.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e09",
+"text": "მართლა! მე მეგონა მართლა სასაცილო ვიყავი. შემდეგ ჯერზე ვეცდები უფრო მხიარული ვიყო."
+},
+{
+"id": "667eb67af4d23a87c3e99e6a",
+"text": "\"Knock Knock, ვინ არის იქ? <m>შენ <m>შენ ვინ? <m>შენ ოოოოო, მე ისევ სასაცილო ვარ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ecb",
+"text": "Ვწუხვარ . შემდეგ ჯერზე ვეცდები უფრო მხიარული ვიყო."
+},
+{
+"id": "667eb67af4d23a87c3e99f2c",
+"text": "Ბოდიშს ვიხდი . შემდეგ ჯერზე ვიმუშავებ იმაზე, რომ უფრო მხიარული ვიყო."
+}
+]
+},
+"de": {
+"de": [
+{
+"id": "667eb67af4d23a87c3e99d48",
+"text": "„Ich bin ja bekanntlich witzig, aber ich werde noch mehr an meinem Sinn für Humor arbeiten.“"
+},
+{
+"id": "667eb67af4d23a87c3e99da9",
+"text": "\"Diesmal nehme ich es, aber ich verspreche, nächstes Mal werde ich lustiger sein.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e0a",
+"text": "Wirklich! Ich dachte, ich wäre wirklich lustig. Ich werde versuchen, das nächste Mal lustiger zu sein."
+},
+{
+"id": "667eb67af4d23a87c3e99e6b",
+"text": "\"Knock Knock, Who's There? <m>You <m>You Who? <m>Youhoooooo ich bin wieder lustig.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ecc",
+"text": "Es tut mir Leid . Ich werde versuchen, das nächste Mal lustiger zu sein."
+},
+{
+"id": "667eb67af4d23a87c3e99f2d",
+"text": "Entschuldigen Sie . Ich werde daran arbeiten, das nächste Mal lustiger zu sein."
+}
+]
+},
+"el": {
+"el": [
+{
+"id": "667eb67af4d23a87c3e99d49",
+"text": "«Είμαι γνωστός ότι είμαι αστείος, αλλά θα δουλέψω περισσότερο με την αίσθηση του χιούμορ μου»."
+},
+{
+"id": "667eb67af4d23a87c3e99daa",
+"text": "«Θα το πάρω αυτή τη φορά, αλλά υπόσχομαι ότι την επόμενη φορά θα είμαι πιο αστείος»."
+},
+{
+"id": "667eb67af4d23a87c3e99e0b",
+"text": "Πραγματικά! Νόμιζα ότι ήμουν πραγματικά αστείος. Θα προσπαθήσω να είμαι πιο αστείος την επόμενη φορά."
+},
+{
+"id": "667eb67af4d23a87c3e99e6c",
+"text": "\"Knock Knock, ποιος είναι εκεί; <m>Εσύ <m>Εσύ ποιος; <m>Youhoooooo είμαι και πάλι αστείος.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ecd",
+"text": "Συγγνώμη . Θα προσπαθήσω να είμαι πιο αστείος την επόμενη φορά."
+},
+{
+"id": "667eb67af4d23a87c3e99f2e",
+"text": "Συγγνώμη . Θα εργαστώ για να είμαι πιο αστείος την επόμενη φορά."
+}
+]
+},
+"gu": {
+"gu": [
+{
+"id": "667eb67af4d23a87c3e99d4a",
+"text": "\"હું રમુજી તરીકે જાણીતો છું, પરંતુ હું મારી રમૂજની ભાવના પર વધુ કામ કરીશ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dab",
+"text": "\"હું આ વખતે લઈશ, પણ હું વચન આપું છું કે આગલી વખતે હું વધુ રમુજી બનીશ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e0c",
+"text": "ખરેખર! મને લાગ્યું કે હું ખરેખર રમુજી છું. હું આગલી વખતે વધુ રમુજી બનવાનો પ્રયત્ન કરીશ."
+},
+{
+"id": "667eb67af4d23a87c3e99e6d",
+"text": "\"નોક નોક, ત્યાં કોણ છે? <m>તમે <m>તમે કોણ છો? <m>તમે ફરીથી રમુજી છું.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ece",
+"text": "હું દિલગીર છું . હું આગલી વખતે વધુ રમુજી બનવાનો પ્રયત્ન કરીશ."
+},
+{
+"id": "667eb67af4d23a87c3e99f2f",
+"text": "મારી માફી . હું આગલી વખતે વધુ રમુજી બનવા પર કામ કરીશ."
+}
+]
+},
+"ha": {
+"ha": [
+{
+"id": "667eb67af4d23a87c3e99d4b",
+"text": "\"An san ni da zama mai ban dariya, amma zan kara yin aiki a kan jin dadi na.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dac",
+"text": "\"Zan ɗauka wannan lokacin, amma na yi alkawari zan zama mai ban dariya na gaba.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e0d",
+"text": "Da gaske! Ina tsammanin ina da ban dariya da gaske . Zan yi ƙoƙarin zama mai ban dariya a gaba."
+},
+{
+"id": "667eb67af4d23a87c3e99e6e",
+"text": "\"Knock Knock, Wanene A can? <m>Kai <m>Kai Wane? <m>Youhoooooo I'm funny again .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ecf",
+"text": "Na tuba . Zan yi ƙoƙarin zama mai ban dariya a gaba."
+},
+{
+"id": "667eb67af4d23a87c3e99f30",
+"text": "Ayi hakuri . Zan yi aiki don zama mai ban dariya a gaba."
+}
+]
+},
+"iw": {
+"iw": [
+{
+"id": "667eb67af4d23a87c3e99d4c",
+"text": "\"ידוע שאני מצחיק, אבל אני אעבוד יותר על חוש ההומור שלי.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dad",
+"text": "\"אני אקח את זה הפעם, אבל אני מבטיח שבפעם הבאה אהיה מצחיק יותר.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e0e",
+"text": "בֶּאֱמֶת! חשבתי שאני ממש מצחיק. אני אנסה להצחיק יותר בפעם הבאה."
+},
+{
+"id": "667eb67af4d23a87c3e99e6f",
+"text": "\"דפוק נוק, מי שם? <m>אתה <m>אתה מי? <m>יווווווו אני שוב מצחיקה.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed0",
+"text": "אני מצטער . אני אנסה להצחיק יותר בפעם הבאה."
+},
+{
+"id": "667eb67af4d23a87c3e99f31",
+"text": "התנצלותי . אני אעבוד על להיות מצחיק יותר בפעם הבאה."
+}
+]
+},
+"hi": {
+"hi": [
+{
+"id": "667eb67af4d23a87c3e99d4d",
+"text": "\"मैं मजाकिया होने के लिए जाना जाता हूं, लेकिन मैं अपने सेंस ऑफ ह्यूमर पर और काम करूंगा।\""
+},
+{
+"id": "667eb67af4d23a87c3e99dae",
+"text": "\"मैं इसे इस बार लूंगा, लेकिन मैं वादा करता हूं कि मैं अगली बार अधिक मजेदार बनूंगा।\""
+},
+{
+"id": "667eb67af4d23a87c3e99e0f",
+"text": "सचमुच! मुझे लगा कि मैं वाकई मजाकिया हूं। मैं अगली बार और मजेदार बनने की कोशिश करूंगा।"
+},
+{
+"id": "667eb67af4d23a87c3e99e70",
+"text": "\"नॉक नॉक, हू इज़ देयर? <m>आप <m>आप कौन हैं? <m>Youhoooooo मैं फिर से मजाकिया हूं।\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed1",
+"text": "मुझे माफ़ करें । मैं अगली बार और मजेदार बनने की कोशिश करूंगा।"
+},
+{
+"id": "667eb67af4d23a87c3e99f32",
+"text": "मैं क्षमाप्रार्थी हूं । मैं अगली बार अधिक मजेदार होने पर काम करूंगा।"
+}
+],
+"en": [
+{
+"id": "667eb6f5f4d23a903b062abb",
+"text": "Mein mazakiya hone ke liye jana chahta hoon. Lekin mein apni hasya ki bhavna par adhik kaam karunga."
+},
+{
+"id": "667eb6f5f4d23a903b062abc",
+"text": "Mujhe isse iss baar le jaaunga, lekin mein vada karta hoon ki mein agli baar mazedaar ho jaunga."
+},
+{
+"id": "667eb6f5f4d23a903b062abd",
+"text": "Sachmuch! Mujhe laga ki mein vastav mein mazakiya tha. Mein agli baar mazedaar banne ki koshish karunga.\\"
+},
+{
+"id": "667eb6f5f4d23a903b062abe",
+"text": "Andar kaun hain? <m> Aap <m> Aap kaun ho? <m> Youhoooooo mein phir se mazakiya hoon."
+},
+{
+"id": "667eb6f5f4d23a903b062abf",
+"text": "Mujhe maaf karein. Mein agli baar mazedaar banne ki koshish karunga."
+},
+{
+"id": "667eb6f5f4d23a903b062ac0",
+"text": "Mein shamaprarthi hoon. Mein agli baar funnier hone par kaam karunga."
+}
+]
+},
+"hu": {
+"hu": [
+{
+"id": "667eb67af4d23a87c3e99d4e",
+"text": "– Köztudott, hogy vicces vagyok, de többet fogok dolgozni a humorérzékemen."
+},
+{
+"id": "667eb67af4d23a87c3e99daf",
+"text": "– Ezúttal elvállalom, de ígérem, legközelebb viccesebb leszek."
+},
+{
+"id": "667eb67af4d23a87c3e99e10",
+"text": "Igazán! Azt hittem, nagyon vicces vagyok. Legközelebb megpróbálok viccesebb lenni."
+},
+{
+"id": "667eb67af4d23a87c3e99e71",
+"text": "\"Knock Knock, ki van ott? <m>Te <m>Te ki? <m>Húúúúú, megint vicces vagyok.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed2",
+"text": "Sajnálom . Legközelebb megpróbálok viccesebb lenni."
+},
+{
+"id": "667eb67af4d23a87c3e99f33",
+"text": "Fogadd bocsánatkérésem . Legközelebb azon fogok dolgozni, hogy viccesebb legyek."
+}
+]
+},
+"is": {
+"is": [
+{
+"id": "667eb67af4d23a87c3e99d4f",
+"text": "\"Ég er þekktur fyrir að vera fyndinn, en ég mun vinna meira í húmorinn minn.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db0",
+"text": "\"Ég tek það í þetta skiptið, en ég lofa að ég verð fyndnari næst.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e11",
+"text": "Í alvöru! Mér fannst ég mjög fyndinn. Ég skal reyna að vera fyndnari næst."
+},
+{
+"id": "667eb67af4d23a87c3e99e72",
+"text": "\"Knock Knock, Who's There? <m>Þú <m>Þú Hver? <m>Youhoooooo ég er fyndinn aftur.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed3",
+"text": "Fyrirgefðu . Ég skal reyna að vera fyndnari næst."
+},
+{
+"id": "667eb67af4d23a87c3e99f34",
+"text": "Afsakið . Ég ætla að vinna í því að vera fyndnari næst."
+}
+]
+},
+"ig": {
+"ig": [
+{
+"id": "667eb67af4d23a87c3e99d50",
+"text": "\"Amaara m na ọ na-akpa ọchị, mana m ga-arụ ọrụ n'echiche nke ọchị m.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db1",
+"text": "\"M ga-ewere ya n'oge a, mana m na-ekwe nkwa na m ga-enwe obi ụtọ oge ọzọ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e12",
+"text": "N'ezie! Echere m na m na-akpa ọchị n'ezie. Aga m agbalị ka m bụrụ ihe ọchị oge ọzọ."
+},
+{
+"id": "667eb67af4d23a87c3e99e73",
+"text": "\"Kọk Knock, Onye nọ? <m>Ị <m>Ị Onye? <m>Youhoooooo I'm funny again .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed4",
+"text": "Ọ dị m nwute . Aga m agbalị ka m bụrụ ihe ọchị oge ọzọ."
+},
+{
+"id": "667eb67af4d23a87c3e99f35",
+"text": "Arịrịọ mgbaghara m . Aga m arụ ọrụ na-atọ ọchị oge ọzọ."
+}
+]
+},
+"id": {
+"id": [
+{
+"id": "667eb67af4d23a87c3e99d51",
+"text": "\"Saya dikenal lucu, tetapi saya akan lebih meningkatkan selera humor saya.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db2",
+"text": "\"Aku akan mengambilnya kali ini, tapi aku berjanji akan lebih lucu lain kali.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e13",
+"text": "Betulkah! Saya pikir saya benar-benar lucu. Saya akan mencoba untuk menjadi lebih lucu lain kali."
+},
+{
+"id": "667eb67af4d23a87c3e99e74",
+"text": "\"Tok Tok, Siapa disana? <m>Kamu <m>Kamu Siapa? <m>Kamuuuuuuu aku lucu lagi.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed5",
+"text": "Saya minta maaf . Saya akan mencoba untuk menjadi lebih lucu lain kali."
+},
+{
+"id": "667eb67af4d23a87c3e99f36",
+"text": "Permintaan maaf saya . Saya akan berusaha menjadi lebih lucu lain kali."
+}
+]
+},
+"ga": {
+"ga": [
+{
+"id": "667eb67af4d23a87c3e99d52",
+"text": "\"Tá a fhios agam a bheith greannmhar, ach beidh mé ag obair ar mo chiall greann níos mó.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db3",
+"text": "\"Tógfaidh mé an uair seo é, ach geallaim go mbeidh mé níos greannmhaire an chéad uair eile.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e14",
+"text": "Dáiríre! Shíl mé go raibh mé an-greannmhar. Déanfaidh mé iarracht a bheith níos greannmhaire an chéad uair eile ."
+},
+{
+"id": "667eb67af4d23a87c3e99e75",
+"text": "\"Cnoc Mhuire, Cé atá ann? <m>Tú <m>Tú Cé? <m>Youhoooooo Tá mé greannmhar arís.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed6",
+"text": "Tá brón orm . Déanfaidh mé iarracht a bheith níos greannmhaire an chéad uair eile ."
+},
+{
+"id": "667eb67af4d23a87c3e99f37",
+"text": "Gabh mo leithscéal. Oibreoidh mé ar a bheith níos greannmhaire an chéad uair eile ."
+}
+]
+},
+"it": {
+"it": [
+{
+"id": "667eb67af4d23a87c3e99d53",
+"text": "\"Sono noto per essere divertente, ma lavorerò di più sul mio senso dell'umorismo\"."
+},
+{
+"id": "667eb67af4d23a87c3e99db4",
+"text": "\"Lo prenderò questa volta, ma prometto che la prossima volta sarò più divertente.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e15",
+"text": "Veramente! Pensavo di essere davvero divertente. Cercherò di essere più divertente la prossima volta."
+},
+{
+"id": "667eb67af4d23a87c3e99e76",
+"text": "\"Toc toc, chi c'è? <m>Tu <m>tu chi? <m>Youhoooooo sono di nuovo divertente .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ed7",
+"text": "Mi dispiace . Cercherò di essere più divertente la prossima volta."
+},
+{
+"id": "667eb67af4d23a87c3e99f38",
+"text": "Mie scuse . Lavorerò per essere più divertente la prossima volta."
+}
+]
+},
+"ja": {
+"ja": [
+{
+"id": "667eb67af4d23a87c3e99d54",
+"text": "「私は面白いことで知られていますが、もっとユーモアのセンスを磨いていきます。」"
+},
+{
+"id": "667eb67af4d23a87c3e99db5",
+"text": "「今回は引き受けますが、次回はもっとおかしくなると約束します。」"
+},
+{
+"id": "667eb67af4d23a87c3e99e16",
+"text": "本当！私は本当に面白いと思いました。次回はもっと面白くなるようにします。"
+},
+{
+"id": "667eb67af4d23a87c3e99e77",
+"text": "「ノックノック、誰がいるの? <m>あなた <m>あなたは誰? <m>ユーフーォー、またおかしくなった."
+},
+{
+"id": "667eb67af4d23a87c3e99ed8",
+"text": "ごめんなさい 。次回はもっと面白くなるようにします。"
+},
+{
+"id": "667eb67af4d23a87c3e99f39",
+"text": "謝罪いたします 。次回はもっと面白くなるように頑張ります。"
+}
+]
+},
+"jv": {
+"jv": [
+{
+"id": "667eb67af4d23a87c3e99d55",
+"text": "\"Aku dikenal dadi lucu, nanging aku bakal ngupayakake rasa humorku luwih akeh.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db6",
+"text": "\"Aku bakal njupuk wektu iki, nanging aku janji aku bakal lucu liyane wektu.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e17",
+"text": "tenan! Aku rumangsa lucu tenan. Aku bakal nyoba kanggo dadi lucu liyane wektu."
+},
+{
+"id": "667eb67af4d23a87c3e99e78",
+"text": "\"Knock Knock, Who's There? <m>Sampeyan <m>Sampeyan Sapa?"
+},
+{
+"id": "667eb67af4d23a87c3e99ed9",
+"text": "Nuwun sewu . Aku bakal nyoba kanggo dadi lucu liyane wektu."
+},
+{
+"id": "667eb67af4d23a87c3e99f3a",
+"text": "Kula nyuwun pangapunten. Aku bakal ngupayakake supaya luwih lucu mbesuk."
+}
+]
+},
+"kn": {
+"kn": [
+{
+"id": "667eb67af4d23a87c3e99d56",
+"text": "\"ನಾನು ತಮಾಷೆ ಎಂದು ತಿಳಿದಿದ್ದೇನೆ, ಆದರೆ ನಾನು ನನ್ನ ಹಾಸ್ಯಪ್ರಜ್ಞೆಯಲ್ಲಿ ಹೆಚ್ಚು ಕೆಲಸ ಮಾಡುತ್ತೇನೆ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99db7",
+"text": "\"ಈ ಬಾರಿ ನಾನು ಅದನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೇನೆ, ಆದರೆ ಮುಂದಿನ ಬಾರಿ ನಾನು ತಮಾಷೆಯಾಗಿರುತ್ತೇನೆ ಎಂದು ನಾನು ಭರವಸೆ ನೀಡುತ್ತೇನೆ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e18",
+"text": "ನಿಜವಾಗಿಯೂ! ನಾನು ನಿಜವಾಗಿಯೂ ತಮಾಷೆಯಾಗಿದ್ದೇನೆ ಎಂದು ನಾನು ಭಾವಿಸಿದೆ. ನಾನು ಮುಂದಿನ ಬಾರಿ ತಮಾಷೆಯಾಗಿರಲು ಪ್ರಯತ್ನಿಸುತ್ತೇನೆ."
+},
+{
+"id": "667eb67af4d23a87c3e99e79",
+"text": "\"ನಾಕ್ ನಾಕ್, ಯಾರಿದ್ದಾರೆ? <m>ನೀವು <m>ನೀವು ಯಾರು? <m>Youhoooooo ನಾನು ಮತ್ತೆ ತಮಾಷೆಯಾಗಿದ್ದೇನೆ .\""
+},
+{
+"id": "667eb67af4d23a87c3e99eda",
+"text": "ನನ್ನನ್ನು ಕ್ಷಮಿಸು . ನಾನು ಮುಂದಿನ ಬಾರಿ ತಮಾಷೆಯಾಗಿರಲು ಪ್ರಯತ್ನಿಸುತ್ತೇನೆ."
+},
+{
+"id": "667eb67af4d23a87c3e99f3b",
+"text": "ನಾನು ಕ್ಷಮೆಯಾಚಿಸುತ್ತೇನೆ . ನಾನು ಮುಂದಿನ ಬಾರಿ ತಮಾಷೆಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತೇನೆ."
+}
+]
+},
+"kk": {
+"kk": [
+{
+"id": "667eb67af4d23a87c3e99d57",
+"text": "«Мен күлкілімін, бірақ мен әзіл-оспақ сезіміммен көбірек жұмыс істейтін боламын»."
+},
+{
+"id": "667eb67af4d23a87c3e99db8",
+"text": "«Мен оны осы жолы қабылдаймын, бірақ келесі жолы көңілді боламын деп уәде беремін»."
+},
+{
+"id": "667eb67af4d23a87c3e99e19",
+"text": "Шынымен! Мен өзімді шынымен күлкілі деп ойладым. Келесі жолы көңілді болуға тырысамын."
+},
+{
+"id": "667eb67af4d23a87c3e99e7a",
+"text": "\"Knock Knock, Кім бар? <m>Сен <m>Сен Кімсің? <m>Youhoooooo мен тағы да күлкілі болдым.\""
+},
+{
+"id": "667eb67af4d23a87c3e99edb",
+"text": "Кешіріңіз . Келесі жолы көңілді болуға тырысамын."
+},
+{
+"id": "667eb67af4d23a87c3e99f3c",
+"text": "Кешірім өтінемін . Мен келесі жолы көңілді болу үшін жұмыс істеймін."
+}
+]
+},
+"km": {
+"km": [
+{
+"id": "667eb67af4d23a87c3e99d58",
+"text": "\"ខ្ញុំ​ត្រូវ​បាន​គេ​ដឹង​ថា​ជា​រឿង​កំប្លែង ប៉ុន្តែ​ខ្ញុំ​នឹង​ធ្វើ​ការ​លើ​អារម្មណ៍​កំប្លែង​របស់​ខ្ញុំ​បន្ថែម​ទៀត\"។"
+},
+{
+"id": "667eb67af4d23a87c3e99db9",
+"text": "\"លើក​នេះ​ខ្ញុំ​នឹង​យក​វា ប៉ុន្តែ​ខ្ញុំ​សន្យា​ថា​ខ្ញុំ​នឹង​លេង​សើច​ជាង​នេះ​នៅ​ពេល​ក្រោយ\"។"
+},
+{
+"id": "667eb67af4d23a87c3e99e1a",
+"text": "ពិតជា! ខ្ញុំគិតថាខ្ញុំពិតជាកំប្លែងណាស់។ ខ្ញុំ​នឹង​ព្យាយាម​ធ្វើ​ឱ្យ​សប្បាយ​ជាង​នេះ​នៅ​ពេល​ក្រោយ​។"
+},
+{
+"id": "667eb67af4d23a87c3e99e7b",
+"text": "\"Knock Knock, តើមានអ្នកណា? <m>អ្នក <m>You Who? <m>Youhoooooo I'm funny again.\""
+},
+{
+"id": "667eb67af4d23a87c3e99edc",
+"text": "ខ្ញុំ​សុំទោស ។ ខ្ញុំ​នឹង​ព្យាយាម​ធ្វើ​ឱ្យ​សប្បាយ​ជាង​នេះ​នៅ​ពេល​ក្រោយ​។"
+},
+{
+"id": "667eb67af4d23a87c3e99f3d",
+"text": "ការ​សុំ​អភ័យទោស​របស់ខ្ញុំ ។ ខ្ញុំ​នឹង​ធ្វើ​ការ​លេងសើច​នៅ​ពេល​ក្រោយ។"
+}
+]
+},
+"rw": {
+"rw": [
+{
+"id": "667eb67af4d23a87c3e99d59",
+"text": "\"Nzwiho gusetsa, ariko nzakora ku buryo bwo gusetsa cyane.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dba",
+"text": "\"Nzabifata iki gihe, ariko ndasezeranya ko ubutaha nzasetsa.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e1b",
+"text": "Mu byukuri! Natekereje ko nsekeje rwose. Nzagerageza gusetsa ubutaha."
+},
+{
+"id": "667eb67af4d23a87c3e99e7c",
+"text": "\"Mukomange Knock, Ninde Uhari? <m> Wowe <m> Wowe Ninde? <m> Youhoooooo Nongeye gusetsa.\""
+},
+{
+"id": "667eb67af4d23a87c3e99edd",
+"text": "Mbabarira. Nzagerageza gusetsa ubutaha."
+},
+{
+"id": "667eb67af4d23a87c3e99f3e",
+"text": "Gusaba imbabazi. Nzakora ku gusetsa ubutaha."
+}
+]
+},
+"ko": {
+"ko": [
+{
+"id": "667eb67af4d23a87c3e99d5a",
+"text": "\"재미있는 것으로 알려져 있지만 유머 감각에 더 노력하겠습니다.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dbb",
+"text": "\"이번에는 내가 받겠지만 다음에는 더 웃길 거라고 약속할게.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e1c",
+"text": "진짜! 나는 내가 정말 재미있다고 생각했다. 다음에는 더 웃기도록 노력하겠습니다."
+},
+{
+"id": "667eb67af4d23a87c3e99e7d",
+"text": "\"Knock Knock, 거기 누구야? <m>You Who? <m>Youhoooooo 나 또 웃겨.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ede",
+"text": "죄송합니다 . 다음에는 더 웃기도록 노력하겠습니다."
+},
+{
+"id": "667eb67af4d23a87c3e99f3f",
+"text": "죄송합니다. 다음에는 더 웃기도록 노력하겠습니다."
+}
+]
+},
+"ky": {
+"ky": [
+{
+"id": "667eb67af4d23a87c3e99d5b",
+"text": "\"Мен күлкүлүү экенимди билишет, бирок мен көбүрөөк юмор сезимимдин үстүндө иштейм.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dbc",
+"text": "\"Бул жолу алам, бирок кийинки жолу күлкүлүү болом деп убада берем.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e1d",
+"text": "Чынында! Мен чындап эле күлкүлүү деп ойлодум. Кийинки жолу күлкүлүү болууга аракет кылам."
+},
+{
+"id": "667eb67af4d23a87c3e99e7e",
+"text": "\"Knock Knock, ал жерде ким бар? <m>Сен <m>Сен кимсиң? <m>Youhoooooo мен дагы тамашалуумун.\""
+},
+{
+"id": "667eb67af4d23a87c3e99edf",
+"text": "Кечирим сурайм . Кийинки жолу күлкүлүү болууга аракет кылам."
+},
+{
+"id": "667eb67af4d23a87c3e99f40",
+"text": "кечирим сурайм. Мен кийинки жолу күлкүлүү болуу үчүн иштейм."
+}
+]
+},
+"lo": {
+"lo": [
+{
+"id": "667eb67af4d23a87c3e99d5c",
+"text": "\"ຂ້ອຍຮູ້ວ່າເປັນເລື່ອງຕະຫລົກ, ແຕ່ຂ້ອຍຈະເຮັດວຽກກ່ຽວກັບຄວາມຮູ້ສຶກຕະຫລົກຂອງຂ້ອຍຫຼາຍຂຶ້ນ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dbd",
+"text": "\"ຂ້ອຍຈະເອົາມັນເທື່ອນີ້, ແຕ່ຂ້ອຍສັນຍາວ່າຂ້ອຍຈະມ່ວນກວ່າໃນຄັ້ງຕໍ່ໄປ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e1e",
+"text": "ແທ້ໆ! ຂ້ອຍຄິດວ່າຂ້ອຍເປັນເລື່ອງຕະຫລົກແທ້ໆ. ຂ້ອຍຈະພະຍາຍາມມ່ວນກວ່າໃນຄັ້ງຕໍ່ໄປ."
+},
+{
+"id": "667eb67af4d23a87c3e99e7f",
+"text": "\"Knock Knock, ໃຜຢູ່ທີ່ນັ້ນ? <m>ເຈົ້າ <m>ເຈົ້າໃຜ? <m>Youhoooooo ຂ້ອຍມາຕະຫລົກອີກເທື່ອຫນຶ່ງ .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee0",
+"text": "ຂ້ອຍ​ຂໍ​ໂທດ . ຂ້ອຍຈະພະຍາຍາມມ່ວນກວ່າໃນຄັ້ງຕໍ່ໄປ."
+},
+{
+"id": "667eb67af4d23a87c3e99f41",
+"text": "ຄໍາ​ຂໍ​ໂທດ​ຂອງ​ຂ້ອຍ . ຂ້ອຍຈະເຮັດວຽກມ່ວນກວ່າໃນຄັ້ງຕໍ່ໄປ."
+}
+]
+},
+"la": {
+"la": [
+{
+"id": "667eb67af4d23a87c3e99d5d",
+"text": "\"Ridiculus sum notus, sed plus facetiarum sensu laborabo.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dbe",
+"text": "\"Hoc tempus accipiam, sed spondeo me iterum futurum esse funniorem\"."
+},
+{
+"id": "667eb67af4d23a87c3e99e1f",
+"text": "Itane! Putabam me esse rem ridiculam. Experiar funnier iterum."
+},
+{
+"id": "667eb67af4d23a87c3e99e80",
+"text": "\"Pulsate, pulsate, quis est ibi? <m>Tu<m>Tu Quis? <m>Youhoooooo iterum sum ridiculam.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee1",
+"text": "Me paenitet . Experiar funnier iterum."
+},
+{
+"id": "667eb67af4d23a87c3e99f42",
+"text": "Mea paenitemus. Ego funnier iterum laborabo."
+}
+]
+},
+"lv": {
+"lv": [
+{
+"id": "667eb67af4d23a87c3e99d5e",
+"text": "\"Ir zināms, ka esmu smieklīgs, bet es vairāk strādāšu pie savas humora izjūtas.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dbf",
+"text": "\"Šoreiz es to izdarīšu, bet es apsolu, ka nākamreiz būšu smieklīgāks.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e20",
+"text": "Tiešām! Man likās, ka esmu patiešām smieklīga. Nākamreiz centīšos būt smieklīgāks."
+},
+{
+"id": "667eb67af4d23a87c3e99e81",
+"text": "\"Knock Knock, who's There? <m>Tu <m>Tu Kas? <m>Youhoooooo es atkal esmu smieklīgs.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee2",
+"text": "Man žēl . Nākamreiz centīšos būt smieklīgāks."
+},
+{
+"id": "667eb67af4d23a87c3e99f43",
+"text": "ES atvainojos . Es strādāšu pie tā, lai nākamreiz būtu smieklīgāks."
+}
+]
+},
+"lt": {
+"lt": [
+{
+"id": "667eb67af4d23a87c3e99d5f",
+"text": "„Žinoma, kad esu juokingas, bet daugiau dirbsiu su humoro jausmu“."
+},
+{
+"id": "667eb67af4d23a87c3e99dc0",
+"text": "„Šį kartą pasiimsiu, bet pažadu, kad kitą kartą būsiu linksmesnis“."
+},
+{
+"id": "667eb67af4d23a87c3e99e21",
+"text": "Tikrai! Maniau, kad esu tikrai juokinga. Kitą kartą pasistengsiu būti juokingesnė."
+},
+{
+"id": "667eb67af4d23a87c3e99e82",
+"text": "\"Knock Knock, kas ten? <m>Tu <m>Tu kas? <m>Youhoooooo aš vėl juokingas .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee3",
+"text": "Aš atsiprašau . Kitą kartą pasistengsiu būti juokingesnė."
+},
+{
+"id": "667eb67af4d23a87c3e99f44",
+"text": "Atsiprašau . Kitą kartą pasistengsiu būti juokingesnė."
+}
+]
+},
+"lb": {
+"lb": [
+{
+"id": "667eb67af4d23a87c3e99d60",
+"text": "\"Ech si bekannt fir witzeg ze sinn, awer ech wäert méi u mäi Sënn fir Humor schaffen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc1",
+"text": "\"Ech wäert et dës Kéier huelen, awer ech verspriechen, ech wäert d'nächst Kéier méi witzeg sinn.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e22",
+"text": "Wierklech! Ech hu geduecht datt ech wierklech witzeg wier. Ech probéieren d'nächst Kéier méi witzeg ze sinn."
+},
+{
+"id": "667eb67af4d23a87c3e99e83",
+"text": "\"Knock Knock, Wien ass do? <m>Du <m>Du Wien? <m>Youhoooooo ech sinn erëm witzeg.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee4",
+"text": "Et deet mir leed . Ech probéieren d'nächst Kéier méi witzeg ze sinn."
+},
+{
+"id": "667eb67af4d23a87c3e99f45",
+"text": "Meng Excusen . Ech wäert schaffen fir d'nächst Kéier méi witzeg ze sinn."
+}
+]
+},
+"mk": {
+"mk": [
+{
+"id": "667eb67af4d23a87c3e99d61",
+"text": "„Знам дека сум смешен, но повеќе ќе работам на мојата смисла за хумор."
+},
+{
+"id": "667eb67af4d23a87c3e99dc2",
+"text": "„Ќе го поднесам овој пат, но ветувам дека следниот пат ќе бидам посмешен“."
+},
+{
+"id": "667eb67af4d23a87c3e99e23",
+"text": "Навистина! Мислев дека сум навистина смешен. Ќе се обидам да бидам посмешен следниот пат."
+},
+{
+"id": "667eb67af4d23a87c3e99e84",
+"text": "„Кук, чук, кој е таму? <m>Ти <m>Ти кој?"
+},
+{
+"id": "667eb67af4d23a87c3e99ee5",
+"text": "Жал ми е . Ќе се обидам да бидам посмешен следниот пат."
+},
+{
+"id": "667eb67af4d23a87c3e99f46",
+"text": "Се извинувам . Ќе работам следниот пат да бидам посмешен."
+}
+]
+},
+"mg": {
+"mg": [
+{
+"id": "667eb67af4d23a87c3e99d62",
+"text": "\"Malaza ho mampihomehy aho, saingy hanatsara kokoa ny fahatsapako vazivazy aho.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc3",
+"text": "\"Handray izany aho amin'ity indray mitoraka ity, fa mampanantena aho fa ho mampihomehy kokoa amin'ny manaraka.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e24",
+"text": "tena! Nihevitra aho fa tena mampihomehy. Hiezaka ho mampihomehy kokoa aho amin'ny manaraka."
+},
+{
+"id": "667eb67af4d23a87c3e99e85",
+"text": "\"Knock Knock, Who's There? <m>Ianao <m>Ianao Iza? <m>Youhoooooo Mampihomehy indray aho .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee6",
+"text": "Miala tsiny aho . Hiezaka ho mampihomehy kokoa aho amin'ny manaraka."
+},
+{
+"id": "667eb67af4d23a87c3e99f47",
+"text": "Miala tsiny aho . Hiezaka ny ho mampihomehy kokoa aho amin'ny manaraka."
+}
+]
+},
+"ms": {
+"ms": [
+{
+"id": "667eb67af4d23a87c3e99d63",
+"text": "\"Saya dikenali sebagai seorang yang kelakar, tetapi saya akan meningkatkan rasa humor saya.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc4",
+"text": "\"Saya akan terima kali ini, tetapi saya janji saya akan menjadi lebih kelakar lain kali.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e25",
+"text": "sungguh! Saya fikir saya benar-benar kelakar. Saya akan cuba menjadi lebih kelakar lain kali."
+},
+{
+"id": "667eb67af4d23a87c3e99e86",
+"text": "\"Knock Knock, Who's There? <m>Awak <m>Awak Siapa? <m>Youhoooooo saya kelakar lagi .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee7",
+"text": "Saya minta maaf . Saya akan cuba menjadi lebih kelakar lain kali."
+},
+{
+"id": "667eb67af4d23a87c3e99f48",
+"text": "saya minta maaf. Saya akan berusaha untuk menjadi lebih lucu lain kali."
+}
+]
+},
+"ml": {
+"ml": [
+{
+"id": "667eb67af4d23a87c3e99d64",
+"text": "\"ഞാൻ തമാശക്കാരനാണെന്ന് അറിയപ്പെടുന്നു, പക്ഷേ എന്റെ നർമ്മബോധത്തിൽ ഞാൻ കൂടുതൽ പ്രവർത്തിക്കും.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc5",
+"text": "\"ഇത്തവണ ഞാൻ അത് എടുക്കും, പക്ഷേ അടുത്ത തവണ ഞാൻ രസകരമാകുമെന്ന് ഞാൻ വാഗ്ദാനം ചെയ്യുന്നു.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e26",
+"text": "ശരിക്കും! ഞാൻ ശരിക്കും തമാശക്കാരനാണെന്ന് ഞാൻ കരുതി. അടുത്ത തവണ കൂടുതൽ രസകരമാകാൻ ഞാൻ ശ്രമിക്കാം."
+},
+{
+"id": "667eb67af4d23a87c3e99e87",
+"text": "\"നക്ക് മുട്ട്, ആരാണ് അവിടെ? <m>നീ <m>നീ ആരാണ്? <m>Youhoooooo ഞാൻ വീണ്ടും തമാശക്കാരനാണ് .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee8",
+"text": "എന്നോട് ക്ഷമിക്കൂ . അടുത്ത തവണ കൂടുതൽ രസകരമാകാൻ ഞാൻ ശ്രമിക്കാം."
+},
+{
+"id": "667eb67af4d23a87c3e99f49",
+"text": "എന്നോട് ക്ഷമിക്കുക . അടുത്ത തവണ കൂടുതൽ രസകരമായി പ്രവർത്തിക്കാൻ ഞാൻ ശ്രമിക്കും."
+}
+]
+},
+"mt": {
+"mt": [
+{
+"id": "667eb67af4d23a87c3e99d65",
+"text": "\"Jien magħruf li nkun umoristiku, imma se naħdem aktar fuq is-sens tal-umoriżmu tiegħi.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc6",
+"text": "\"Din id-darba nieħuha, imma nwiegħed li d-darba li jmiss ser inkun aktar umoristiku.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e27",
+"text": "Tassew! Ħsibt li kont tassew umoristiċi. Nipprova nkun aktar umoristiku d-darba li jmiss."
+},
+{
+"id": "667eb67af4d23a87c3e99e88",
+"text": "\"Knock Knock, Who's There? <m>Int <m>Int Min? <m>Youhoooooo Jien umoristiku mill-ġdid.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ee9",
+"text": "Jiddispjaċini . Nipprova nkun aktar umoristiku d-darba li jmiss."
+},
+{
+"id": "667eb67af4d23a87c3e99f4a",
+"text": "Skużani . Ser naħdem biex id-darba li jmiss inkun aktar umoristiku."
+}
+]
+},
+"mi": {
+"mi": [
+{
+"id": "667eb67af4d23a87c3e99d66",
+"text": "\"E mohiotia ana he rorirori ahau, engari ka kaha ake taku mahi i taku whakakatakata.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc7",
+"text": "\"Ka tangohia e au i tenei wa, engari ka oati ahau ka harikoa ahau a muri ake nei.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e28",
+"text": "Tino! I whakaaro ahau he tino katakata ahau. Ka ngana ahau ki te whakakatakata a muri ake nei."
+},
+{
+"id": "667eb67af4d23a87c3e99e89",
+"text": "\"Knock Knock, Who's There? <m>You <m>You Who? <m>Youhoooooo He katakata ano ahau .\""
+},
+{
+"id": "667eb67af4d23a87c3e99eea",
+"text": "Ka pouri ahau . Ka ngana ahau ki te whakakatakata a muri ake nei."
+},
+{
+"id": "667eb67af4d23a87c3e99f4b",
+"text": "Taku whakapāha. Ka mahi au ki te whakakatakata a muri ake nei."
+}
+]
+},
+"mr": {
+"mr": [
+{
+"id": "667eb67af4d23a87c3e99d67",
+"text": "\"मी मजेदार म्हणून ओळखला जातो, परंतु मी माझ्या विनोदबुद्धीवर अधिक काम करेन.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc8",
+"text": "\"मी या वेळी घेईन, पण मी वचन देतो की पुढच्या वेळी मी आणखी मजेदार होईन.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e29",
+"text": "खरंच! मला वाटले की मी खरोखर मजेदार आहे. मी पुढच्या वेळी मजेदार बनण्याचा प्रयत्न करेन."
+},
+{
+"id": "667eb67af4d23a87c3e99e8a",
+"text": "\"नॉक नॉक, तिथे कोण आहे? <m>तुम्ही <m>तुम्ही कोण? <m>Youhoooooo मी पुन्हा मजेदार आहे.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eeb",
+"text": "मला माफ करा. मी पुढच्या वेळी मजेदार बनण्याचा प्रयत्न करेन."
+},
+{
+"id": "667eb67af4d23a87c3e99f4c",
+"text": "माझी माफी मागतो. मी पुढच्या वेळी मजेदार होण्यासाठी काम करेन."
+}
+]
+},
+"mn": {
+"mn": [
+{
+"id": "667eb67af4d23a87c3e99d68",
+"text": "\"Би хөгжилтэй гэдгээрээ алдартай, гэхдээ би хошин шогийн мэдрэмж дээрээ илүү их ажиллах болно.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dc9",
+"text": "\"Би энэ удаад хүлээж авна, гэхдээ дараагийн удаа би илүү хөгжилтэй байх болно гэж амлаж байна.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e2a",
+"text": "Үнэхээр! Би өөрийгөө үнэхээр хөгжилтэй гэж бодсон. Дараагийн удаа би илүү хөгжилтэй байхыг хичээх болно."
+},
+{
+"id": "667eb67af4d23a87c3e99e8b",
+"text": "\"Knock Knock, Тэнд хэн байна? <m>Чи <m>Чи хэн бэ? <m> Чихөө-хөө, би дахиад л инээдтэй байна.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eec",
+"text": "Намайг уучлаарай . Дараагийн удаа би илүү хөгжилтэй байхыг хичээх болно."
+},
+{
+"id": "667eb67af4d23a87c3e99f4d",
+"text": "Миний буруу . Би дараагийн удаа илүү хөгжилтэй байх болно."
+}
+]
+},
+"ne": {
+"ne": [
+{
+"id": "667eb67af4d23a87c3e99d69",
+"text": "\"म हास्यास्पद हुन जान्दछु, तर म मेरो हास्यको भावनामा थप काम गर्नेछु।\""
+},
+{
+"id": "667eb67af4d23a87c3e99dca",
+"text": "\"म यो पटक लिन्छु, तर म वाचा गर्छु कि म अर्को पटक रमाइलो हुनेछु।\""
+},
+{
+"id": "667eb67af4d23a87c3e99e2b",
+"text": "साँच्चै! मलाई लाग्यो कि म साँच्चै हास्यास्पद छु। म अर्को पटक रमाइलो हुने प्रयास गर्नेछु।"
+},
+{
+"id": "667eb67af4d23a87c3e99e8c",
+"text": "\"नक नक, त्यहाँ को छ? <m> तपाईं <m> तपाईं को हुनुहुन्छ? <m> Youhoooooo म फेरि हास्यास्पद छु।\""
+},
+{
+"id": "667eb67af4d23a87c3e99eed",
+"text": "मलाई माफ गरिदेउ । म अर्को पटक रमाइलो हुने प्रयास गर्नेछु।"
+},
+{
+"id": "667eb67af4d23a87c3e99f4e",
+"text": "क्षमा पाउँ । म अर्को पटक रमाइलो हुने काम गर्नेछु।"
+}
+]
+},
+"no": {
+"no": [
+{
+"id": "667eb67af4d23a87c3e99d6a",
+"text": "\"Jeg er kjent for å være morsom, men jeg kommer til å jobbe mer med humoren min.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dcb",
+"text": "\"Jeg tar det denne gangen, men jeg lover at jeg skal være morsommere neste gang.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e2c",
+"text": "Egentlig! Jeg trodde jeg var veldig morsom. Jeg skal prøve å være morsommere neste gang."
+},
+{
+"id": "667eb67af4d23a87c3e99e8d",
+"text": "\"Knock Knock, hvem er der? <m>Du <m>Du Hvem? <m>Duhoooooo jeg er morsom igjen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99eee",
+"text": "Beklager . Jeg skal prøve å være morsommere neste gang."
+},
+{
+"id": "667eb67af4d23a87c3e99f4f",
+"text": "Jeg beklager . Jeg skal jobbe med å være morsommere neste gang ."
+}
+]
+},
+"or": {
+"or": [
+{
+"id": "667eb67af4d23a87c3e99d6b",
+"text": "ମୁଁ ମଜାଳିଆ ବୋଲି ଜଣାଶୁଣା, କିନ୍ତୁ ମୁଁ ମୋର ହାସ୍ୟରସ ଉପରେ ଅଧିକ କାମ କରିବି।"
+},
+{
+"id": "667eb67af4d23a87c3e99dcc",
+"text": "ମୁଁ ଏଥର ଏହାକୁ ନେବି, କିନ୍ତୁ ମୁଁ ପ୍ରତିଜ୍ଞା କରୁଛି ଯେ ପରବର୍ତ୍ତୀ ସମୟରେ ମୁଁ ମଜାଳିଆ ହେବି।"
+},
+{
+"id": "667eb67af4d23a87c3e99e2d",
+"text": "ପ୍ରକୃତରେ! ମୁଁ ଭାବିଲି ମୁଁ ପ୍ରକୃତରେ ମଜାଳିଆ ଅଟେ | ପରବର୍ତ୍ତୀ ସମୟରେ ମୁଁ ମଜାଳିଆ ହେବାକୁ ଚେଷ୍ଟା କରିବି |"
+},
+{
+"id": "667eb67af4d23a87c3e99e8e",
+"text": "\"ନକ୍ ନକ୍, କିଏ ସେଠାରେ ଅଛନ୍ତି? <m> ତୁମେ <m> ତୁମେ କିଏ? <m> ତୁମେ ପୁଣି ଥରେ ମଜାଳିଆ"
+},
+{
+"id": "667eb67af4d23a87c3e99eef",
+"text": "ମୁଁ ଦୁଃଖିତ । ପରବର୍ତ୍ତୀ ସମୟରେ ମୁଁ ମଜାଳିଆ ହେବାକୁ ଚେଷ୍ଟା କରିବି |"
+},
+{
+"id": "667eb67af4d23a87c3e99f50",
+"text": "ମୁଁ କ୍ଷମା ମାଗୁଛି । ପରବର୍ତ୍ତୀ ସମୟରେ ମୁଁ ମଜାଳିଆ ହେବା ପାଇଁ କାମ କରିବି |"
+}
+]
+},
+"ps": {
+"ps": [
+{
+"id": "667eb67af4d23a87c3e99d6c",
+"text": "\"زه مسخره یم، مګر زه به زما د طنز په احساس ډیر کار وکړم.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dcd",
+"text": "\"زه به دا ځل واخلم، مګر زه ژمنه کوم چې بل ځل به په زړه پورې وي.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e2e",
+"text": "رښتیا! ما فکر کاوه چې زه واقعیا مسخره وم. زه به هڅه وکړم چې بل ځل په زړه پورې اوسم."
+},
+{
+"id": "667eb67af4d23a87c3e99e8f",
+"text": "ټک ټک، هلته څوک دی؟"
+},
+{
+"id": "667eb67af4d23a87c3e99ef0",
+"text": "زه بخښنه غواړم . زه به هڅه وکړم چې بل ځل په زړه پورې اوسم."
+},
+{
+"id": "667eb67af4d23a87c3e99f51",
+"text": "بخښنه غواړم زه به بل ځل په مسخره کیدو کار وکړم."
+}
+]
+},
+"fa": {
+"fa": [
+{
+"id": "667eb67af4d23a87c3e99d6d",
+"text": "\"من به شوخ طبعی معروف هستم، اما بیشتر روی حس شوخ طبعی خود کار خواهم کرد.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dce",
+"text": "\"این بار آن را قبول می کنم، اما قول می دهم دفعه بعد خنده دارتر باشم.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e2f",
+"text": "واقعا! فکر می کردم واقعاً خنده دار هستم. سعی میکنم دفعه بعد بامزه تر باشم ."
+},
+{
+"id": "667eb67af4d23a87c3e99e90",
+"text": "\"تق بزن، چه کسی آنجاست؟ <m>تو <m>تو که؟ <m>توووووو من دوباره خنده دار هستم.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef1",
+"text": "متاسفم . سعی میکنم دفعه بعد بامزه تر باشم ."
+},
+{
+"id": "667eb67af4d23a87c3e99f52",
+"text": "عذرخواهی من . دفعه بعد روی خنده دارتر بودن کار خواهم کرد."
+}
+]
+},
+"pl": {
+"pl": [
+{
+"id": "667eb67af4d23a87c3e99d6e",
+"text": "„Jestem znany z tego, że jestem zabawny, ale będę bardziej pracował nad swoim poczuciem humoru”."
+},
+{
+"id": "667eb67af4d23a87c3e99dcf",
+"text": "\"Wezmę to tym razem, ale obiecuję, że następnym razem będę zabawniejszy.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e30",
+"text": "Naprawdę! Myślałem, że jestem naprawdę zabawny. Następnym razem spróbuję być śmieszniejszy ."
+},
+{
+"id": "667eb67af4d23a87c3e99e91",
+"text": "„Puk, puk, kto tam jest? <m>Ty <m>Ty, który? <m>Youhoooooo, znowu jestem zabawny”."
+},
+{
+"id": "667eb67af4d23a87c3e99ef2",
+"text": "Przykro mi . Następnym razem spróbuję być śmieszniejszy ."
+},
+{
+"id": "667eb67af4d23a87c3e99f53",
+"text": "Przepraszam . Następnym razem popracuję nad tym, żeby być zabawniejszym."
+}
+]
+},
+"pt": {
+"pt": [
+{
+"id": "667eb67af4d23a87c3e99d6f",
+"text": "\"Sou conhecido por ser engraçado, mas vou trabalhar mais no meu senso de humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd0",
+"text": "\"Vou aceitar desta vez, mas prometo que serei mais engraçado da próxima vez.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e31",
+"text": "Sério! Achei muito engraçado. Vou tentar ser mais engraçado da próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99e92",
+"text": "\"Knock Knock, quem está aí? <m>Você <m>Você quem? <m>Youhoooooo eu sou engraçado de novo.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef3",
+"text": "Eu sinto Muito . Vou tentar ser mais engraçado da próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99f54",
+"text": "Me desculpe . Vou trabalhar para ser mais engraçado da próxima vez."
+}
+]
+},
+"pa": {
+"pa": [
+{
+"id": "667eb67af4d23a87c3e99d70",
+"text": "\"ਮੈਂ ਮਜ਼ਾਕੀਆ ਹੋਣ ਲਈ ਜਾਣਿਆ ਜਾਂਦਾ ਹਾਂ, ਪਰ ਮੈਂ ਆਪਣੀ ਹਾਸੇ ਦੀ ਭਾਵਨਾ 'ਤੇ ਹੋਰ ਕੰਮ ਕਰਾਂਗਾ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd1",
+"text": "\"ਮੈਂ ਇਸਨੂੰ ਇਸ ਵਾਰ ਲਵਾਂਗਾ, ਪਰ ਮੈਂ ਵਾਅਦਾ ਕਰਦਾ ਹਾਂ ਕਿ ਮੈਂ ਅਗਲੀ ਵਾਰ ਹੋਰ ਮਜ਼ੇਦਾਰ ਹੋਵਾਂਗਾ.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e32",
+"text": "ਸੱਚਮੁੱਚ! ਮੈਂ ਸੋਚਿਆ ਕਿ ਮੈਂ ਸੱਚਮੁੱਚ ਮਜ਼ਾਕੀਆ ਸੀ। ਮੈਂ ਅਗਲੀ ਵਾਰ ਹੋਰ ਮਜ਼ੇਦਾਰ ਬਣਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗਾ।"
+},
+{
+"id": "667eb67af4d23a87c3e99e93",
+"text": "\"ਨੌਕ ਨੋਕ, ਉੱਥੇ ਕੌਣ ਹੈ? <m>ਤੁਸੀਂ <m>ਤੁਸੀਂ ਕੌਣ? <m>ਯੂਹੂਓੂ ਮੈਂ ਫਿਰ ਤੋਂ ਮਜ਼ਾਕੀਆ ਹਾਂ।\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef4",
+"text": "ਮੈਨੂੰ ਮੁਆਫ ਕਰੋ . ਮੈਂ ਅਗਲੀ ਵਾਰ ਹੋਰ ਮਜ਼ੇਦਾਰ ਬਣਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗਾ।"
+},
+{
+"id": "667eb67af4d23a87c3e99f55",
+"text": "ਮੇਰੀ ਖਿਮਾ - ਯਾਚਨਾ . ਮੈਂ ਅਗਲੀ ਵਾਰ ਮਜ਼ੇਦਾਰ ਬਣਨ 'ਤੇ ਕੰਮ ਕਰਾਂਗਾ।"
+}
+]
+},
+"ro": {
+"ro": [
+{
+"id": "667eb67af4d23a87c3e99d71",
+"text": "„Se știe că sunt amuzant, dar voi lucra mai mult la simțul umorului”."
+},
+{
+"id": "667eb67af4d23a87c3e99dd2",
+"text": "„O voi lua de data asta, dar promit că voi fi mai amuzant data viitoare.”"
+},
+{
+"id": "667eb67af4d23a87c3e99e33",
+"text": "Într-adevăr! Am crezut că sunt foarte amuzant. Voi încerca să fiu mai amuzant data viitoare."
+},
+{
+"id": "667eb67af4d23a87c3e99e94",
+"text": "\"Toc Cioc, cine e acolo? <m>Tu <m>Tu cine? <m>Youhoooooo sunt din nou amuzant.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef5",
+"text": "Imi pare rau . Voi încerca să fiu mai amuzant data viitoare."
+},
+{
+"id": "667eb67af4d23a87c3e99f56",
+"text": "Scuzele mele . Mă voi strădui să fiu mai amuzant data viitoare."
+}
+]
+},
+"ru": {
+"ru": [
+{
+"id": "667eb67af4d23a87c3e99d72",
+"text": "«Известно, что я забавный, но я буду больше работать над своим чувством юмора»."
+},
+{
+"id": "667eb67af4d23a87c3e99dd3",
+"text": "«Я возьму это на этот раз, но я обещаю, что в следующий раз буду смешнее»."
+},
+{
+"id": "667eb67af4d23a87c3e99e34",
+"text": "Действительно! Я думал, что я действительно смешной. В следующий раз постараюсь быть смешнее."
+},
+{
+"id": "667eb67af4d23a87c3e99e95",
+"text": "«Тук-тук, кто там? <m>Ты, <m>Ты, кто? <m>Тыооооо, я снова смешной»."
+},
+{
+"id": "667eb67af4d23a87c3e99ef6",
+"text": "Мне жаль . В следующий раз постараюсь быть смешнее."
+},
+{
+"id": "667eb67af4d23a87c3e99f57",
+"text": "Мои извинения . Я постараюсь быть смешнее в следующий раз."
+}
+]
+},
+"sm": {
+"sm": [
+{
+"id": "667eb67af4d23a87c3e99d73",
+"text": "\"Ua lauiloa aʻu e malie, ae o le a ou galue atili i loʻu uiga malie.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd4",
+"text": "\"O le a ou faia i le taimi lenei, ae ou te folafola atu o le a sili atu loʻu malie i le isi taimi.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e35",
+"text": "E moni lava! Sa ou manatu sa ou matua malie lava . O le a ou taumafai e fai malie i le isi taimi ."
+},
+{
+"id": "667eb67af4d23a87c3e99e96",
+"text": "\"Tu'itu'i Tu'itu'i, O ai oi ai?<m>Oe<m>O ai?<m>Youhoooooo Ua ou toe malie.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef7",
+"text": "Ua ou faanoanoa . O le a ou taumafai e fai malie i le isi taimi ."
+},
+{
+"id": "667eb67af4d23a87c3e99f58",
+"text": "Ou te faatoese atu . O le a ou galue ina ia sili atu le malie i le isi taimi ."
+}
+]
+},
+"sr": {
+"sr": [
+{
+"id": "667eb67af4d23a87c3e99d74",
+"text": "„Познато сам да сам духовит, али ћу више радити на свом смислу за хумор.“"
+},
+{
+"id": "667eb67af4d23a87c3e99dd5",
+"text": "\"Овај пут ћу узети, али обећавам да ћу следећи пут бити смешнији.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e36",
+"text": "Заиста! Мислио сам да сам заиста смешан. Покушаћу да будем смешнији следећи пут."
+},
+{
+"id": "667eb67af4d23a87c3e99e97",
+"text": "\"Кноцк Кноцк, Вхо'с Тхере? <м>Ти <м>Ти ко? <м>Иоухоооооо, опет сам забаван .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef8",
+"text": "Жао ми је . Покушаћу да будем смешнији следећи пут."
+},
+{
+"id": "667eb67af4d23a87c3e99f59",
+"text": "Моје извињење . Радићу на томе да следећи пут будем смешнији."
+}
+]
+},
+"sn": {
+"sn": [
+{
+"id": "667eb67af4d23a87c3e99d75",
+"text": "\"Ini ndinozivikanwa kuva anosetsa, asi ndichagadzirisa pfungwa dzangu dzekuseka zvakanyanya .\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd6",
+"text": "\"Ndichazvitora rwendo rwuno, asi ndinovimbisa kuti nguva inotevera ndichave ndichiseka .\""
+},
+{
+"id": "667eb67af4d23a87c3e99e37",
+"text": "Chokwadi! Ndaifunga kuti ndainakidzwa chaizvo . Ndichaedza kuita zvekutamba nguva inotevera ."
+},
+{
+"id": "667eb67af4d23a87c3e99e98",
+"text": "\"Knock Knock, Ndiani Aripo? <m>Iwe <m>Iwe Ndiani? <m>Youhoooooo I'm funny again .\""
+},
+{
+"id": "667eb67af4d23a87c3e99ef9",
+"text": "Ndine hurombo . Ndichaedza kuita zvekutamba nguva inotevera ."
+},
+{
+"id": "667eb67af4d23a87c3e99f5a",
+"text": "Ndinokumbira ruregerero. Ndichashanda pakuita zvekutamba nguva inotevera ."
+}
+]
+},
+"sd": {
+"sd": [
+{
+"id": "667eb67af4d23a87c3e99d76",
+"text": "\"مان مسڪين طور سڃاتو وڃي ٿو، پر مان پنهنجي مزاح جي احساس تي وڌيڪ ڪم ڪندس.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd7",
+"text": "\"مان هن ڀيري وٺندس، پر مان واعدو ڪندس ته آئون ايندڙ ڀيري وڌيڪ مزيدار ٿيندس.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e38",
+"text": "واقعي! مون سوچيو ته مان واقعي مزاحيه آهيان. مان ايندڙ وقت وڌيڪ مزاحيه ٿيڻ جي ڪوشش ڪندس."
+},
+{
+"id": "667eb67af4d23a87c3e99e99",
+"text": "”نڪ ناڪ، ڪير آهي اتي؟ <m>تون <m>تو ڪير؟ <m>Youhoooooo مان وري مسڪين آهيان."
+},
+{
+"id": "667eb67af4d23a87c3e99efa",
+"text": "مون کي افسوس آهي . مان ايندڙ وقت وڌيڪ مزاحيه ٿيڻ جي ڪوشش ڪندس."
+},
+{
+"id": "667eb67af4d23a87c3e99f5b",
+"text": "منهنجي معافي. مان ايندڙ وقت وڌيڪ مزاحيه ٿيڻ تي ڪم ڪندس."
+}
+]
+},
+"si": {
+"si": [
+{
+"id": "667eb67af4d23a87c3e99d77",
+"text": "\"මම විහිලුකාරයෙක් බව දන්නා නමුත් මම මගේ හාස්‍යය පිළිබඳ හැඟීම වැඩි වැඩියෙන් වැඩ කරමි.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd8",
+"text": "\"මම මේ වතාවේ ගන්නම්, නමුත් මම පොරොන්දු වෙනවා ඊළඟ වතාවේ මම විනෝදජනකයි කියලා .\""
+},
+{
+"id": "667eb67af4d23a87c3e99e39",
+"text": "ඇත්තටම! මම හිතුවේ මම ඇත්තටම විහිළුවක් කියලා. මම ඊළඟ වතාවේ වඩාත් විනෝදජනක වීමට උත්සාහ කරමි."
+},
+{
+"id": "667eb67af4d23a87c3e99e9a",
+"text": "\"Knock Knock, Who's there? <m>ඔබ <m>ඔබ කවුද? <m>Youhoooooo මම නැවතත් විහිලුයි .\""
+},
+{
+"id": "667eb67af4d23a87c3e99efb",
+"text": "මට කණගාටුයි . මම ඊළඟ වතාවේ වඩාත් විනෝදජනක වීමට උත්සාහ කරමි."
+},
+{
+"id": "667eb67af4d23a87c3e99f5c",
+"text": "මාගේ කණගාටුව . මම ඊළඟ වතාවේ විනෝදජනක වීමට වැඩ කරන්නෙමි."
+}
+]
+},
+"sk": {
+"sk": [
+{
+"id": "667eb67af4d23a87c3e99d78",
+"text": "\"Je o mne známe, že som vtipný, ale viac popracujem na svojom zmysle pre humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dd9",
+"text": "\"Tentoraz to vezmem, ale sľubujem, že nabudúce budem zábavnejší.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e3a",
+"text": "Naozaj! Myslel som, že som naozaj vtipný. Nabudúce sa pokúsim byť vtipnejší."
+},
+{
+"id": "667eb67af4d23a87c3e99e9b",
+"text": "\"Klop klop, kto je tam? <m>Ty <m>Ty kto? <m>Youhoooooo ja som zase vtipný.\""
+},
+{
+"id": "667eb67af4d23a87c3e99efc",
+"text": "Prepáč . Nabudúce sa pokúsim byť vtipnejší."
+},
+{
+"id": "667eb67af4d23a87c3e99f5d",
+"text": "Ospravedlňujem sa . Nabudúce popracujem na tom, aby som bol vtipnejší."
+}
+]
+},
+"sl": {
+"sl": [
+{
+"id": "667eb67af4d23a87c3e99d79",
+"text": "\"Znam, da sem zabaven, vendar bom bolj delal na svojem smislu za humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dda",
+"text": "\"Tokrat bom vzel, vendar obljubim, da bom naslednjič bolj smešen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e3b",
+"text": "res! Mislil sem, da sem res smešen. Naslednjič bom poskušal biti bolj smešen."
+},
+{
+"id": "667eb67af4d23a87c3e99e9c",
+"text": "\"Knock Knock, kdo je tam? <m>Ti <m>Ti Kdo? <m>Tihoooooo, spet sem smešen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99efd",
+"text": "Žal mi je . Naslednjič bom poskušal biti bolj smešen."
+},
+{
+"id": "667eb67af4d23a87c3e99f5e",
+"text": "Se opravičujem . Delal bom na tem, da bom naslednjič bolj smešen."
+}
+]
+},
+"so": {
+"so": [
+{
+"id": "667eb67af4d23a87c3e99d7a",
+"text": "\"Waxaa la ii yaqaan in aan qosol badan yahay, laakiin wax badan ayaan ka shaqeyn doonaa dareenkayga kaftanka.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ddb",
+"text": "\"Waan qaadan doonaa markan, laakiin waxaan ballan qaadayaa inaan noqon doono mid ka qosol badan marka xigta.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e3c",
+"text": "Runtii! Waxaan moodayay inaan runtii kaftan ahay. Waxaan isku dayi doonaa inaan noqdo ka qosol badan marka xigta"
+},
+{
+"id": "667eb67af4d23a87c3e99e9d",
+"text": "\"Ku dhufo, yaa jooga? <m>Adiga <m>Adiga yaa? <m>Youhoooooo mar kale ayaan kaftan ahay.\""
+},
+{
+"id": "667eb67af4d23a87c3e99efe",
+"text": "Waan ka xumahay . Waxaan isku dayi doonaa inaan noqdo ka qosol badan marka xigta"
+},
+{
+"id": "667eb67af4d23a87c3e99f5f",
+"text": "Iga raali ahow . Waxaan ka shaqeyn doonaa inaan noqdo ka qosol badan marka xigta."
+}
+]
+},
+"es": {
+"es": [
+{
+"id": "667eb67af4d23a87c3e99d7b",
+"text": "\"Soy conocido por ser divertido, pero trabajaré más en mi sentido del humor\"."
+},
+{
+"id": "667eb67af4d23a87c3e99ddc",
+"text": "\"Lo tomaré esta vez, pero prometo que seré más divertido la próxima vez\"."
+},
+{
+"id": "667eb67af4d23a87c3e99e3d",
+"text": "¡En realidad! Pensé que era muy gracioso. Intentaré ser más divertido la próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99e9e",
+"text": "\"Toc toc, ¿quién está ahí? <m>Tú <m>Tú, ¿quién? <m>Youhoooooo Soy gracioso otra vez\"."
+},
+{
+"id": "667eb67af4d23a87c3e99eff",
+"text": "Lo siento . Intentaré ser más divertido la próxima vez."
+},
+{
+"id": "667eb67af4d23a87c3e99f60",
+"text": "Mis disculpas . Trabajaré en ser más divertido la próxima vez."
+}
+]
+},
+"su": {
+"su": [
+{
+"id": "667eb67af4d23a87c3e99d7c",
+"text": "\"Kuring dipikawanoh janten lucu, tapi kuring bakal dianggo dina rasa humor kuring leuwih\"."
+},
+{
+"id": "667eb67af4d23a87c3e99ddd",
+"text": "\"Kuring bakal nyandak waktos ieu, tapi kuring janji kuring bakal langkung lucu waktos salajengna.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e3e",
+"text": "Nyaan! Panginten kuring lucu pisan. Abdi badé nyobian langkung lucu waktos salajengna."
+},
+{
+"id": "667eb67af4d23a87c3e99e9f",
+"text": "\"Knock Knock, Saha Aya? <m>Anjeun <m>Anjeun Saha? <m>Youhoooooo Abdi lucu deui.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f00",
+"text": "Abdi nyungkeun hapunten . Abdi badé nyobian langkung lucu waktos salajengna."
+},
+{
+"id": "667eb67af4d23a87c3e99f61",
+"text": "Hapunten . Abdi badé ngusahakeun janten langkung lucu waktos salajengna."
+}
+]
+},
+"sw": {
+"sw": [
+{
+"id": "667eb67af4d23a87c3e99d7d",
+"text": "\"Ninajulikana kuwa mcheshi, lakini nitafanyia kazi hisia zangu za ucheshi zaidi.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dde",
+"text": "\"Nitakubali wakati huu, lakini ninaahidi nitakuwa mcheshi zaidi wakati ujao.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e3f",
+"text": "Kweli! Nilidhani nilikuwa mcheshi sana. Nitajaribu kuwa mcheshi zaidi wakati ujao."
+},
+{
+"id": "667eb67af4d23a87c3e99ea0",
+"text": "\"Gonga Gonga, Nani Yupo? <m>Wewe <m>Wewe Nani? <m>Youhoooooo nachekesha tena.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f01",
+"text": "Samahani . Nitajaribu kuwa mcheshi zaidi wakati ujao."
+},
+{
+"id": "667eb67af4d23a87c3e99f62",
+"text": "Samahani . Nitajitahidi kuwa mcheshi zaidi wakati ujao."
+}
+]
+},
+"sv": {
+"sv": [
+{
+"id": "667eb67af4d23a87c3e99d7e",
+"text": "\"Jag är känd för att vara rolig, men jag kommer att arbeta mer med min humor.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ddf",
+"text": "\"Jag tar det den här gången, men jag lovar att jag ska vara roligare nästa gång.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e40",
+"text": "Verkligen! Jag tyckte att jag var riktigt rolig. Jag ska försöka vara roligare nästa gång."
+},
+{
+"id": "667eb67af4d23a87c3e99ea1",
+"text": "\"Knock Knock, vem är där? <m>Du <m>Du Vem? <m>Duhoooooo jag är rolig igen.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f02",
+"text": "Jag är ledsen . Jag ska försöka vara roligare nästa gång."
+},
+{
+"id": "667eb67af4d23a87c3e99f63",
+"text": "Jag ber om ursäkt . Jag ska jobba på att vara roligare nästa gång ."
+}
+]
+},
+"tg": {
+"tg": [
+{
+"id": "667eb67af4d23a87c3e99d7f",
+"text": "\"Маро хандаовар медонанд, аммо ман бештар дар болои ҳисси юмор кор мекунам.\""
+},
+{
+"id": "667eb67af4d23a87c3e99de0",
+"text": "\"Ин дафъа ман онро қабул мекунам, аммо ваъда медиҳам, ки дафъаи оянда хандаовартар хоҳам буд.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e41",
+"text": "Дар ҳақиқат! Ман фикр мекардам, ки ман дар ҳақиқат хандоварам. Ман кӯшиш мекунам, ки дафъаи оянда хандовартар бошам."
+},
+{
+"id": "667eb67af4d23a87c3e99ea2",
+"text": "\"Knock Knock, кӣ ҳаст? <m>Ту <m>Ту кистӣ? <m>Youhoooooo ман боз хандоварам.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f03",
+"text": "Мебахшӣ . Ман кӯшиш мекунам, ки дафъаи оянда хандовартар бошам."
+},
+{
+"id": "667eb67af4d23a87c3e99f64",
+"text": "Маъзарат мехоҳам . Ман дафъаи оянда барои хандовартар шудан кор хоҳам кард."
+}
+]
+},
+"ta": {
+"ta": [
+{
+"id": "667eb67af4d23a87c3e99d80",
+"text": "\"நான் வேடிக்கையானவன் என்று அறியப்பட்டேன், ஆனால் நான் என் நகைச்சுவை உணர்வில் அதிகமாக வேலை செய்வேன்.\""
+},
+{
+"id": "667eb67af4d23a87c3e99de1",
+"text": "\"நான் இந்த முறை எடுத்துக்கொள்கிறேன், ஆனால் அடுத்த முறை நான் வேடிக்கையாக இருப்பேன் என்று உறுதியளிக்கிறேன்.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e42",
+"text": "உண்மையில்! நான் மிகவும் வேடிக்கையானவன் என்று நினைத்தேன். அடுத்த முறை வேடிக்கையாக இருக்க முயற்சிக்கிறேன்."
+},
+{
+"id": "667eb67af4d23a87c3e99ea3",
+"text": "\"நாக் நாக், யார் அங்கே? <m>நீ <m>நீ யார்? <m>Youhoooooo நான் மீண்டும் வேடிக்கையாக இருக்கிறேன் .\""
+},
+{
+"id": "667eb67af4d23a87c3e99f04",
+"text": "என்னை மன்னிக்கவும் . அடுத்த முறை வேடிக்கையாக இருக்க முயற்சிக்கிறேன்."
+},
+{
+"id": "667eb67af4d23a87c3e99f65",
+"text": "என் மன்னிப்பு. அடுத்த முறை ஜாலியாக இருக்க வேலை செய்வேன்."
+}
+]
+},
+"te": {
+"te": [
+{
+"id": "667eb67af4d23a87c3e99d81",
+"text": "\"నేను హాస్యాస్పదంగా ఉంటాను, కానీ నేను నా హాస్యం గురించి మరింత పని చేస్తాను.\""
+},
+{
+"id": "667eb67af4d23a87c3e99de2",
+"text": "\"నేను ఈసారి తీసుకుంటాను, కానీ నేను తదుపరిసారి సరదాగా ఉంటానని వాగ్దానం చేస్తున్నాను .\""
+},
+{
+"id": "667eb67af4d23a87c3e99e43",
+"text": "నిజమే! నేను నిజంగా ఫన్నీ అని అనుకున్నాను. నేను తదుపరిసారి సరదాగా ఉండటానికి ప్రయత్నిస్తాను."
+},
+{
+"id": "667eb67af4d23a87c3e99ea4",
+"text": "\"నాక్ నాక్, ఎవరు అక్కడ ఉన్నారు? <m>మీరు <m>మీరు ఎవరు? <m>Youhoooooo నేను మళ్ళీ ఫన్నీగా ఉన్నాను .\""
+},
+{
+"id": "667eb67af4d23a87c3e99f05",
+"text": "నన్ను క్షమించండి . నేను తదుపరిసారి సరదాగా ఉండటానికి ప్రయత్నిస్తాను."
+},
+{
+"id": "667eb67af4d23a87c3e99f66",
+"text": "నా క్షమాపణలు . నేను తదుపరిసారి సరదాగా ఉండేలా పని చేస్తాను."
+}
+]
+},
+"th": {
+"th": [
+{
+"id": "667eb67af4d23a87c3e99d82",
+"text": "\"ฉันรู้ดีว่าเป็นคนตลก แต่ฉันจะพยายามใช้อารมณ์ขันให้มากกว่านี้\""
+},
+{
+"id": "667eb67af4d23a87c3e99de3",
+"text": "\"ครั้งนี้ฉันจะสู้ แต่ฉันสัญญาว่าครั้งหน้าฉันจะสนุกกว่านี้\""
+},
+{
+"id": "667eb67af4d23a87c3e99e44",
+"text": "จริงๆ! ฉันคิดว่าฉันเป็นคนตลกจริงๆ คราวหน้าจะพยายามให้สนุกกว่านี้ค่ะ"
+},
+{
+"id": "667eb67af4d23a87c3e99ea5",
+"text": "\"ก๊อก ก๊อก ใครอยู่ตรงนั้น <m>คุณ <m>คุณคือใคร <m>Youhooooooo ฉันตลกอีกแล้ว\""
+},
+{
+"id": "667eb67af4d23a87c3e99f06",
+"text": "ฉันเสียใจ . คราวหน้าจะพยายามให้สนุกกว่านี้ค่ะ"
+},
+{
+"id": "667eb67af4d23a87c3e99f67",
+"text": "ขอโทษด้วย . ฉันจะพยายามทำให้สนุกมากขึ้นในครั้งต่อไป"
+}
+]
+},
+"tr": {
+"tr": [
+{
+"id": "667eb67af4d23a87c3e99d83",
+"text": "\"Komik biri olarak bilinirim ama mizah anlayışım üzerinde daha çok çalışacağım.\""
+},
+{
+"id": "667eb67af4d23a87c3e99de4",
+"text": "\"Bu sefer alacağım, ama söz veriyorum bir dahaki sefere daha komik olacağım.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e45",
+"text": "Yok canım! Gerçekten komik olduğumu düşündüm. Bir dahaki sefere daha komik olmaya çalışacağım."
+},
+{
+"id": "667eb67af4d23a87c3e99ea6",
+"text": "\"Knock Knock, Orada Kim Var? <m>Sen <m>Sen Kimsin? <m>Youhoooooo Yine komikim.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f07",
+"text": "Üzgünüm . Bir dahaki sefere daha komik olmaya çalışacağım."
+},
+{
+"id": "667eb67af4d23a87c3e99f68",
+"text": "Özür dilerim . Bir dahaki sefere daha komik olmaya çalışacağım."
+}
+]
+},
+"tk": {
+"tk": [
+{
+"id": "667eb67af4d23a87c3e99d84",
+"text": "\"Özümiň gülkünçdigimi bilýärin, ýöne degişmämiň üstünde has köp işlärin\"."
+},
+{
+"id": "667eb67af4d23a87c3e99de5",
+"text": "\"Bu gezek alaryn, ýöne indiki gezek has gülkünç boljakdygyma söz berýärin.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e46",
+"text": "Hakykatdanam! Men hakykatdanam gülkünç diýip pikir etdim. Indiki gezek gülkünç bolmaga synanyşaryn."
+},
+{
+"id": "667eb67af4d23a87c3e99ea7",
+"text": "\"Nok kak, kim bar? <m> Sen <m> sen kim? <m> Youhoooooo men ýene gülkünç.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f08",
+"text": "Bagyşlaň Indiki gezek gülkünç bolmaga synanyşaryn."
+},
+{
+"id": "667eb67af4d23a87c3e99f69",
+"text": "Meniň ötünçlerim . Indiki gezek gülkünç bolmagyň üstünde işlärin."
+}
+]
+},
+"uk": {
+"uk": [
+{
+"id": "667eb67af4d23a87c3e99d85",
+"text": "«Відомо, що я веселий, але я буду більше працювати над своїм почуттям гумору»."
+},
+{
+"id": "667eb67af4d23a87c3e99de6",
+"text": "«Цього разу я візьму це, але обіцяю, що наступного разу буду смішнішим»."
+},
+{
+"id": "667eb67af4d23a87c3e99e47",
+"text": "Справді! Я думав, що я справді смішний. Наступного разу я спробую бути смішнішим."
+},
+{
+"id": "667eb67af4d23a87c3e99ea8",
+"text": "«Стук, стук, хто там? <m>Ти <m>Ти хто? <m>Тиоооооо, я знову смішний»."
+},
+{
+"id": "667eb67af4d23a87c3e99f09",
+"text": "мені шкода Наступного разу я спробую бути смішнішим."
+},
+{
+"id": "667eb67af4d23a87c3e99f6a",
+"text": "Мої вибачення . Я буду працювати над тим, щоб наступного разу бути смішнішим."
+}
+]
+},
+"ur": {
+"ur": [
+{
+"id": "667eb67af4d23a87c3e99d86",
+"text": "\"میں مضحکہ خیز جانا جاتا ہوں، لیکن میں اپنی حس مزاح پر مزید کام کروں گا۔\""
+},
+{
+"id": "667eb67af4d23a87c3e99de7",
+"text": "\"میں اسے اس بار لوں گا، لیکن میں وعدہ کرتا ہوں کہ میں اگلی بار زیادہ مزہ آؤں گا۔\""
+},
+{
+"id": "667eb67af4d23a87c3e99e48",
+"text": "واقعی! میں نے سوچا کہ میں واقعی مضحکہ خیز ہوں۔ میں اگلی بار مزید مزاحیہ بننے کی کوشش کروں گا۔"
+},
+{
+"id": "667eb67af4d23a87c3e99ea9",
+"text": "\"Knock Knock، وہاں کون ہے؟ <m>You <m>You Who? <m>Youhoooooo میں پھر سے مضحکہ خیز ہوں۔\""
+},
+{
+"id": "667eb67af4d23a87c3e99f0a",
+"text": "میں معافی چاہتا ہوں . میں اگلی بار مزید مزاحیہ بننے کی کوشش کروں گا۔"
+},
+{
+"id": "667eb67af4d23a87c3e99f6b",
+"text": "میری معذرت . میں اگلی بار مزید مزاحیہ ہونے پر کام کروں گا۔"
+}
+]
+},
+"ug": {
+"ug": [
+{
+"id": "667eb67af4d23a87c3e99d87",
+"text": "«مېنىڭ قىزىقارلىق ئىكەنلىكىم مەلۇم ، ئەمما مەن يۇمۇرىستىك ھېسسىياتىمنى تېخىمۇ تىرىشىپ ئىشلەيمەن»."
+},
+{
+"id": "667eb67af4d23a87c3e99de8",
+"text": "«مەن بۇ قېتىم ئېلىپ بېرىمەن ، ئەمما كېلەر قېتىم تېخىمۇ قىزىقارلىق بولىدىغانلىقىمغا ۋەدە بېرىمەن»."
+},
+{
+"id": "667eb67af4d23a87c3e99e49",
+"text": "ھەقىقەتەن! مەن ھەقىقەتەن قىزىقارلىق دەپ ئويلىدىم. كېلەر قېتىم قىزىقارلىق بولۇشقا تىرىشىمەن."
+},
+{
+"id": "667eb67af4d23a87c3e99eaa",
+"text": "\"چەكمە چېكىڭ ، كىم بار؟ <m> سىز <m> سىز كىم؟ <m> Youhoooooo مەن يەنە قىزىقارلىق.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f0b",
+"text": "كەچۈرۈڭ. كېلەر قېتىم قىزىقارلىق بولۇشقا تىرىشىمەن."
+},
+{
+"id": "667eb67af4d23a87c3e99f6c",
+"text": "كەچۈرۈم سورايمەن. كېلەر قېتىم قىزىقارلىق بولۇش ئۈچۈن تىرىشىمەن."
+}
+]
+},
+"uz": {
+"uz": [
+{
+"id": "667eb67af4d23a87c3e99d88",
+"text": "\"Men hazilkash ekanligim bilan tanilganman, lekin hazil tuyg'usi ustida ko'proq ishlayman.\""
+},
+{
+"id": "667eb67af4d23a87c3e99de9",
+"text": "\"Bu safar men buni qabul qilaman, lekin keyingi safar qiziqarliroq bo'laman va'da beraman.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4a",
+"text": "Haqiqatan ham! Men haqiqatan ham kulgiliman deb o'yladim. Keyingi safar yanada qiziqarli bo'lishga harakat qilaman."
+},
+{
+"id": "667eb67af4d23a87c3e99eab",
+"text": "\"Knock Knock, u erda kim bor? <m>Sen <m>Sen kimsan? <m>Youhoooooo men yana kulgiliman.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f0c",
+"text": "Uzr so'rayman . Keyingi safar yanada qiziqarli bo'lishga harakat qilaman."
+},
+{
+"id": "667eb67af4d23a87c3e99f6d",
+"text": "Uzr so'rayman . Men keyingi safar qiziqarliroq bo'lishga harakat qilaman."
+}
+]
+},
+"vi": {
+"vi": [
+{
+"id": "667eb67af4d23a87c3e99d89",
+"text": "\"Tôi được biết đến là người hài hước, nhưng tôi sẽ rèn luyện khả năng hài hước của mình nhiều hơn.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dea",
+"text": "\"Tôi sẽ nhận nó lần này, nhưng tôi hứa lần sau tôi sẽ hài hước hơn.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4b",
+"text": "Có thật không! Tôi đã nghĩ rằng tôi thực sự rất buồn cười. Tôi sẽ cố gắng trở nên hài hước hơn vào lần sau."
+},
+{
+"id": "667eb67af4d23a87c3e99eac",
+"text": "\"Knock Knock, Who's There? <m> You <m> You Who? <m> Youhoooooo Tôi lại hài hước.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f0d",
+"text": "Tôi xin lỗi . Tôi sẽ cố gắng trở nên hài hước hơn vào lần sau."
+},
+{
+"id": "667eb67af4d23a87c3e99f6e",
+"text": "Lời xin lỗi của tôi . Tôi sẽ cố gắng vui vẻ hơn vào lần sau."
+}
+]
+},
+"cy": {
+"cy": [
+{
+"id": "667eb67af4d23a87c3e99d8a",
+"text": "\"Rwy'n hysbys i fod yn ddoniol, ond byddaf yn gweithio ar fy synnwyr digrifwch yn fwy.\""
+},
+{
+"id": "667eb67af4d23a87c3e99deb",
+"text": "\"Fe gymeraf y tro hwn, ond rwy'n addo y byddaf yn fwy doniol y tro nesaf.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4c",
+"text": "Reit! Roeddwn i'n meddwl fy mod yn ddoniol iawn. Byddaf yn ceisio bod yn fwy doniol y tro nesaf ."
+},
+{
+"id": "667eb67af4d23a87c3e99ead",
+"text": "\"Knock Knock, Pwy Sy' Yno? <m>Chi <m>Chi Pwy? <m>Youhoooooo Rwy'n ddoniol eto.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f0e",
+"text": "Mae'n ddrwg gen i . Byddaf yn ceisio bod yn fwy doniol y tro nesaf ."
+},
+{
+"id": "667eb67af4d23a87c3e99f6f",
+"text": "Fy ymddiheuriadau . Byddaf yn gweithio ar fod yn fwy doniol y tro nesaf ."
+}
+]
+},
+"xh": {
+"xh": [
+{
+"id": "667eb67af4d23a87c3e99d8b",
+"text": "\"Ndaziwa njengomntu ohlekisayo, kodwa ndiza kuphinda ndisebenzise uburharha bam .\""
+},
+{
+"id": "667eb67af4d23a87c3e99dec",
+"text": "\"Ndiza kuyithatha ngeli xesha, kodwa ndiyathembisa ukuba ndiza kuba mnandi ngakumbi kwixesha elizayo.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4d",
+"text": "Ngokwenene! Bendicinga ndihlekisa nyani . Ndizakuzama ukuba mnandi kwixesha elizayo ."
+},
+{
+"id": "667eb67af4d23a87c3e99eae",
+"text": "\" Knock Knock, Ngubani Olapho? <m>Wena <m>Ungubani?"
+},
+{
+"id": "667eb67af4d23a87c3e99f0f",
+"text": "Uxolo . Ndizakuzama ukuba mnandi kwixesha elizayo ."
+},
+{
+"id": "667eb67af4d23a87c3e99f70",
+"text": "Uxoliso lwam . Ndiza kusebenzela ukuba yintlekisa kwixesha elizayo."
+}
+]
+},
+"yi": {
+"yi": [
+{
+"id": "667eb67af4d23a87c3e99d8c",
+"text": "\"איך בין באקאנט צו זיין מאָדנע, אָבער איך וועט אַרבעטן אויף מיין געפיל פון הומאָר מער.\""
+},
+{
+"id": "667eb67af4d23a87c3e99ded",
+"text": "\"איך וועל נעמען עס דאָס מאָל, אָבער איך צוזאָג איך וועט זיין מאָדנע ווייַטער מאָל.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4e",
+"text": "טאַקע! איך האב געמײנט אז איך בין טאַקע מאָדנע . # # # # # # # # # # # # # # # # # # # # # # # # # # # # naar naar naar? naar? worden? געפר?יבט?"
+},
+{
+"id": "667eb67af4d23a87c3e99eaf",
+"text": "\"קלאַפּ קלאַפּן, ווער איז דאָרט? <מ>איר <מ>איר ווער? <מ>יאָאָאָאָאָאָ איך בין מאָדנע ווידער.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f10",
+"text": "אנטשולדיגט . # # # # # # # # # # # # # # # # # # # # # # # # # # # # naar naar naar? naar? worden? געפר?יבט?"
+},
+{
+"id": "667eb67af4d23a87c3e99f71",
+"text": "אנטשולדיג מיר . איך וועט אַרבעטן אויף זיין מאָדנע ווייַטער מאָל ."
+}
+]
+},
+"yo": {
+"yo": [
+{
+"id": "667eb67af4d23a87c3e99d8d",
+"text": "\"A mọ mi lati jẹ alarinrin, ṣugbọn emi yoo ṣiṣẹ lori ori-ara mi diẹ sii.\""
+},
+{
+"id": "667eb67af4d23a87c3e99dee",
+"text": "\"Emi yoo gba ni akoko yii, ṣugbọn Mo ṣe ileri pe emi yoo jẹ funnier nigbamii.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e4f",
+"text": "Looto! Mo ro mo ti wà gan funny. Emi yoo gbiyanju lati jẹ alarinrin diẹ sii nigba miiran."
+},
+{
+"id": "667eb67af4d23a87c3e99eb0",
+"text": "\"Kọlu Kọlu, Tani Wa nibẹ? <m>Iwọ <m>Iwọ Tani? <m>Youhoooooo Mo tun dun.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f11",
+"text": "Ma binu . Emi yoo gbiyanju lati jẹ alarinrin diẹ sii nigba miiran."
+},
+{
+"id": "667eb67af4d23a87c3e99f72",
+"text": "Awọn ẹbẹ mi . Emi yoo ṣiṣẹ lori jijẹ apanilẹrin ni akoko miiran."
+}
+]
+},
+"zu": {
+"zu": [
+{
+"id": "667eb67af4d23a87c3e99d8e",
+"text": "\"Ngiyaziwa ngingumuntu ohlekisayo, kodwa ngizosebenzela ekubeni namahlaya ngokwengeziwe .\""
+},
+{
+"id": "667eb67af4d23a87c3e99def",
+"text": "\"Ngizoyithatha kulokhu, kodwa ngiyethembisa ngizoba yinhlekisa ngokuzayo .\""
+},
+{
+"id": "667eb67af4d23a87c3e99e50",
+"text": "Ngempela! Ngangithi ngiyahlekisa ngempela . Ngizozama ukuba yinhlekisa ngokuzayo ."
+},
+{
+"id": "667eb67af4d23a87c3e99eb1",
+"text": "\"Knock Knock, Ubani Okhona? <m>Wena <m>Ubani? <m>Youhoooooo ngiyahlekisa futhi.\""
+},
+{
+"id": "667eb67af4d23a87c3e99f12",
+"text": "Ngiyaxolisa . Ngizozama ukuba yinhlekisa ngokuzayo ."
+},
+{
+"id": "667eb67af4d23a87c3e99f73",
+"text": "Ngiyaxolisa . Ngizosebenzela ekubeni mnandi ngokuzayo ."
+}
+]
+},
+"tl": {
+"tl": [
+{
+"id": "667eb67af4d23a87c3e99d8f",
+"text": "\"Kilala akong nakakatawa, pero mas gagawin ko ang sense of humor ko .\""
+},
+{
+"id": "667eb67af4d23a87c3e99df0",
+"text": "\"Kukunin ko ito sa oras na ito, ngunit ipinapangako ko na magiging mas nakakatawa ako sa susunod.\""
+},
+{
+"id": "667eb67af4d23a87c3e99e51",
+"text": "Talaga! Akala ko nakakatawa talaga ako. Susubukan kong maging mas nakakatawa sa susunod."
+},
+{
+"id": "667eb67af4d23a87c3e99eb2",
+"text": "\"Knock Knock, Who's There? <m>Ikaw <m>Ikaw Sino? <m>Youhoooooo Nakakatuwa na naman ako .\""
+},
+{
+"id": "667eb67af4d23a87c3e99f13",
+"text": "Ako ay humihingi ng paumanhin . Susubukan kong maging mas nakakatawa sa susunod."
+},
+{
+"id": "667eb67af4d23a87c3e99f74",
+"text": "Paumanhin ko. Susubukan kong maging mas nakakatawa sa susunod."
+}
+]
+}
+}
+},
+"meta": {},
+"error": {}
+}

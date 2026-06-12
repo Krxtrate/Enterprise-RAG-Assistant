@@ -1,24 +1,22 @@
-from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import UploadFile, File
-from pypdf import PdfReader
 from dotenv import load_dotenv
-
+from fastapi import FastAPI
 from huggingface_hub import InferenceClient
 from sentence_transformers import SentenceTransformer
+from typing import Optional
+from io import BytesIO
+from typing import List
+from huggingface_hub import login
 
 import chromadb
 import requests
 import base64
 import os
-
-from io import BytesIO
-from typing import List
+import json
+import random
 
 load_dotenv()
-
-from huggingface_hub import login
 
 hf_token = os.getenv("hftoken")
 
@@ -38,9 +36,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-document_text = ""
-
 
 # =====================================================
 # CHROMADB + EMBEDDINGS
@@ -62,15 +57,59 @@ collection = chroma_client.get_or_create_collection(
     name="company_knowledge"
 )
 
+# =====================================================
+# SMALLTALK DATA
+# =====================================================
+
+smalltalk_intents = []
+
+for filename in os.listdir("smalltalk"):
+
+    if not filename.endswith(".json"):
+        continue
+
+    filepath = os.path.join(
+        "smalltalk",
+        filename
+    )
+
+    with open(
+        filepath,
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        try:
+
+            data = json.load(f)
+
+            smalltalk_intents.append(
+                data
+            )
+
+            print(
+                f"Loaded: {filename}"
+            )
+
+        except Exception as e:
+
+            print(
+                f"Failed loading {filename}"
+            )
+
+            print(e)
+
+print(
+    f"\nLoaded {len(smalltalk_intents)} smalltalk files."
+)
 
 # =====================================================
 # IMAGE GENERATION CLIENT
 # =====================================================
 
 hf_client = InferenceClient(
-    api_key=os.getenv("hftoken")
+    api_key=hf_token
 )
-
 
 # =====================================================
 # MODELS
@@ -78,7 +117,7 @@ hf_client = InferenceClient(
 
 class Message(BaseModel):
     role: str
-    content: str
+    content: Optional[str] = ""
 
 
 class ChatRequest(BaseModel):
@@ -87,7 +126,6 @@ class ChatRequest(BaseModel):
 
 class ImageRequest(BaseModel):
     prompt: str
-
 
 # =====================================================
 # ROUTES
@@ -99,15 +137,12 @@ def home():
         "message": "AI Assistant Running"
     }
 
-
 # =====================================================
 # CHAT
 # =====================================================
 
 @app.post("/generate")
 def generate(chat: ChatRequest):
-
-    global document_text
 
     conversation = ""
 
@@ -118,37 +153,68 @@ def generate(chat: ChatRequest):
 
     latest_question = ""
 
-    for msg in chat.messages[-3:]:
-        if msg.role == "user":
-            latest_question += msg.content + " "
+    for msg in reversed(chat.messages):
 
-    latest_question_lower = latest_question.lower()
+        if msg.role == "user":
+
+            latest_question = (
+                msg.content or ""
+            )
+
+            break
+
+    user_text = latest_question.lower().strip()
+
+    print(f"SMALLTALK CHECKING: '{user_text}'")
+
+    for intent in smalltalk_intents:
+
+        for example in intent["body"]["user_says"]:
+
+            if (
+                example["active"]
+                and example["text"].lower()
+                == user_text
+            ):
+
+                responses = (
+                    intent["body"]
+                    ["bot_says"]
+                    ["en"]
+                    ["en"]
+                )
+
+                print(
+                    f"SMALLTALK MATCH: {user_text}"
+                )
+
+                return {
+                    "output": random.choice(
+                        responses
+                    )["text"]
+                }
 
     company_keywords = [
-        "adcounty",
+        "ABC",
         "company",
         "service",
         "services",
         "product",
         "products",
-        "support",
-        "employee",
-        "employees",
-        "client",
-        "clients",
-        "internship",
-        "internships",
-        "technology",
-        "technologies",
         "contact",
+        "support",
+        "career",
+        "careers",
+        "internship",
+        "employee",
         "office",
-        "headquarters",
-        "policy",
-        "policies"
+        "address",
+        "email",
+        "phone"
     ]
 
     is_company_question = any(
-        keyword in latest_question_lower
+        keyword in latest_question.lower()
         for keyword in company_keywords
     )
 
@@ -166,27 +232,47 @@ def generate(chat: ChatRequest):
 
         results = collection.query(
             query_embeddings=[query_embedding],
-            n_results=5
+            n_results=4
         )
 
+        best_distance = results["distances"][0][0]
+
+        print(f"\nBest Distance: {best_distance}")
         print("\nDISTANCES:")
         print(results["distances"])
+        print("\nSOURCES:")
+        print("\nRETRIEVED SOURCES:")
 
-        retrieved_docs = results.get(
-            "documents",
-            [[]]
-        )[0]
+        for metadata in results["metadatas"][0]:
+            print(metadata)
+
+        retrieved_docs = []
+
+        if best_distance < 1.4:
+
+            distances = results["distances"][0]
+
+            for i, distance in enumerate(distances):
+
+                if distance < 1.4:
+
+                    source = results["metadatas"][0][i]["source"]
+
+                    retrieved_docs.append(
+                        f"SOURCE: {source}\n\n"
+                        f"{results['documents'][0][i]}"
+                    )
 
         company_context = "\n\n".join(
-            retrieved_docs
-        )[:6000]
+                retrieved_docs
+        )[:2500]
 
-        if not company_context.strip():
-            company_context = "No relevant company information found."
-
+        if not retrieved_docs:
+            company_context = "NO_RELEVANT_COMPANY_INFORMATION"
+    
+    
     else:
-
-        print("\nGENERAL CHAT DETECTED")
+        company_context = ""
 
     print("\n==============================")
     print("USER QUESTION:")
@@ -197,7 +283,9 @@ def generate(chat: ChatRequest):
         print("\nRETRIEVED DOCUMENTS:")
 
         for doc in results["documents"][0]:
+
             print("-------------------")
+
             print(doc[:300])
 
     print("==============================\n")
@@ -210,43 +298,82 @@ def generate(chat: ChatRequest):
 
     SYSTEM INSTRUCTION:
 
-    You are the official AI assistant of AdCounty Media.
+    You are the official AI assistant of ABC.
 
-    COMPANY KNOWLEDGE:
+    COMPANY INFORMATION:
 
     {company_context}
 
     RULES:
 
-    1. If the user asks about AdCounty Media,
-    use COMPANY KNOWLEDGE as the primary source.
+    1. If the user asks about ABC, use COMPANY INFORMATION as the primary source.
 
-    2. If the answer is present in COMPANY KNOWLEDGE,
-    answer using that information.
+    2. When answering questions about ABC, speak from the company's perspective.
 
-    3. If the user asks about AdCounty Media and the
-    information is not available in COMPANY KNOWLEDGE,
-    respond:
+        Use:
+        - we
+        - our
+        - us
 
-    "Sorry, I couldn't find that information."
+        instead of:
+        - they
+        - their
+        - them
 
-    4. If the user asks a general question unrelated
-    to AdCounty Media, answer normally as a helpful,
-    intelligent AI assistant.
+        Examples:
 
-    5. You may:
-    - Explain concepts
-    - Answer technical questions
-    - Help with coding
-    - Tell jokes
-    - Engage in conversation
-    - Assist with learning
+        Correct:
+        "We offer AI-driven programmatic advertising solutions."
 
-    6. Never invent company-specific information.
+        Correct:
+        "Our corporate office is located in Gurugram."
 
-    7. Answer completely and do not omit items from lists.
+        Incorrect:
+        "They offer AI-driven programmatic advertising solutions."
 
-    8. If company information is available, answer naturally.
+        Incorrect:
+        "Their office is located in Gurugram."
+
+    3. If the answer is present in COMPANY INFORMATION, answer using that information.
+
+    4. If the user asks about ABC and the information is not present in the provided company information,
+        respond:
+
+        "Sorry, I couldn't find that information."
+
+        Do not guess.
+        Do not invent.
+        Do not infer.
+
+    5. If the user asks a general question unrelated to ABC, answer normally as a helpful, intelligent AI assistant.
+
+    6. You may:
+        - Explain concepts
+        - Answer technical questions
+        - Help with coding
+        - Tell jokes
+        - Engage in conversation
+        - Assist with learning
+
+    7. Never invent company-specific information.
+
+    8. When company information is provided, use only the information explicitly present.
+
+        Never create templates.
+
+        Never generate:
+        - [insert phone number]
+        - [insert email]
+        - [insert website]
+        - placeholders
+        - example values
+
+        If a value is unavailable,
+        omit it entirely.
+
+    9. Answer completely and do not omit items from lists.
+
+    10. If company information is available, answer naturally.
 
         Never mention:
         - COMPANY KNOWLEDGE
@@ -264,7 +391,7 @@ def generate(chat: ChatRequest):
         Do not explain why.
         Do not mention missing context.
 
-    9. Never list information that is unavailable.
+    11. Never list information that is unavailable.
         
         If a field is unknown, omit it entirely.
 
@@ -276,7 +403,17 @@ def generate(chat: ChatRequest):
 
         Simply exclude unavailable information from the answer.
 
-    10. When answering broad questions such as:
+    12. If COMPANY INFORMATION contains:
+
+        NO_RELEVANT_COMPANY_INFORMATION
+
+        and the question is about ABC,
+
+        respond:
+
+        "Sorry, I couldn't find that information."
+
+    13. When answering broad questions such as:
 
         - Complete overview
         - Tell me about the company
@@ -294,24 +431,15 @@ def generate(chat: ChatRequest):
         6. Contact information
 
         Keep summaries under 300 words.
+
+    14. If contact information is requested, only provide information explicitly present in the company information.
+
+        Never invent phone numbers,
+        websites,
+        or missing contact details.
+
+    
     """
-
-    # -----------------------------------
-    # OPTIONAL PDF CONTEXT
-    # -----------------------------------
-
-    if document_text:
-
-        conversation += f"""
-
-        UPLOADED DOCUMENT:
-
-        {document_text[:2500]}
-
-        If the user's question refers to the uploaded document,
-        use this information.
-
-        """
 
     # -----------------------------------
     # CHAT MEMORY
@@ -348,16 +476,26 @@ def generate(chat: ChatRequest):
         "prompt": conversation,
         "stream": False,
         "options": {
-            "num_predict": 350,
+            "num_predict": 400,
             "temperature": 0.2
         }
     }
 
     try:
+        
+        print("Sending request to Ollama...")
+
         response = requests.post(
             "http://localhost:11434/api/generate",
             json=payload,
             timeout=120
+        )
+
+        result = response.json()
+
+        print(response.status_code)
+        print(
+            result.get("response", "")[:300]
         )
 
         if response.status_code != 200:
@@ -369,46 +507,13 @@ def generate(chat: ChatRequest):
         return {
             "output": "The AI service is currently unavailable."
         }
-        
-    result = response.json()
 
     return {
-        "output": result["response"]
+        "output": result.get(
+            "response",
+            "No response generated."
+        )
     }
-
-
-# =====================================================
-# PDF UPLOAD
-# =====================================================
-
-@app.post("/upload")
-async def upload_file(file: UploadFile = File(...)):
-
-    global document_text
-
-    reader = PdfReader(file.file)
-
-    text = ""
-
-    for page in reader.pages:
-
-        extracted = page.extract_text()
-
-        if extracted:
-            text += extracted + "\n"
-
-    document_text = text
-
-    print("\n===== PDF UPLOADED =====")
-    print(f"Characters: {len(text)}")
-    print("========================\n")
-
-    return {
-        "message": "Document uploaded successfully",
-        "pdf_length": len(text),
-        "pdf_preview": text[:500]
-    }
-
 
 # =====================================================
 # IMAGE GENERATION
