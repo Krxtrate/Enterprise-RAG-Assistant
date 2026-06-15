@@ -1,57 +1,89 @@
 import os
 import requests
-
+from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
+MAX_PAGES = 50
 
-# ==========================================
-# CONFIG
-# ==========================================
 
-BASE_URL = "YOUR_COMPANY_WEBSITE_URL_HERE"
+BASE_URL = "https://www.adcountymedia.com"
 
-urls = [
-    BASE_URL,
-    urljoin(BASE_URL, "/about"),
-    urljoin(BASE_URL, "/services"),
-    urljoin(BASE_URL, "/products"),
-    urljoin(BASE_URL, "/careers"),
-    urljoin(BASE_URL, "/contact"),
-]
+visited = set()
+to_visit = {BASE_URL}
 
-# ==========================================
-# CREATE KNOWLEDGE FOLDER
-# ==========================================
 
 os.makedirs(
     "knowledge",
     exist_ok=True
 )
 
-# ==========================================
-# SCRAPE PAGES
-# ==========================================
 
-for url in urls:
+while to_visit:
+
+    url = to_visit.pop()
+
+    if url in visited:
+        continue
+
+    visited.add(url)
+
+    if len(visited) > MAX_PAGES:
+        break
 
     print(f"Scraping: {url}")
 
     try:
 
-        response = requests.get(
-            url,
-            timeout=10,
-            headers={
-                "User-Agent":
-                "Mozilla/5.0"
-            }
-        )
+        with sync_playwright() as p:
+
+            browser = p.chromium.launch(
+                headless=True
+            )
+
+            page = browser.new_page()
+
+            page.goto(
+                url,
+                wait_until="networkidle"
+            )
+
+            page.wait_for_timeout(3000)
+
+            html = page.content()
+
+            browser.close()
 
         soup = BeautifulSoup(
-            response.text,
+            html,
             "html.parser"
         )
+        
+        for link in soup.find_all("a", href=True):
 
+            href = link["href"]
+
+            full_url = urljoin(
+                BASE_URL,
+                href
+            )
+
+            parsed = urlparse(full_url)
+
+            if (
+                parsed.netloc ==
+                urlparse(BASE_URL).netloc
+            ):
+
+                clean_url = (
+                    parsed.scheme
+                    + "://"
+                    + parsed.netloc
+                    + parsed.path
+                )
+
+                if clean_url not in visited:
+                    to_visit.add(clean_url)
+                
         for tag in soup.find_all(
             ["form", "input", "button", "select", "textarea"]
         ):
@@ -77,9 +109,6 @@ for url in urls:
             strip=True
         )
 
-        # ----------------------------------
-        # CREATE FILE NAME
-        # ----------------------------------
 
         path = urlparse(url).path
 
@@ -102,9 +131,20 @@ for url in urls:
             f"{filename}: {len(text)} chars"
         )
         
-        # ----------------------------------
-        # SAVE FILE
-        # ----------------------------------
+        if any(
+            x in url.lower()
+            for x in [
+                ".jpg",
+                ".jpeg",
+                ".png",
+                ".svg",
+                ".pdf",
+                ".zip",
+                "#"
+            ]
+        ):
+            continue
+        
 
         with open(
             file_path,

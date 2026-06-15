@@ -195,7 +195,7 @@ def generate(chat: ChatRequest):
                 }
 
     company_keywords = [
-        "ABC",
+        "ABC ",
         "company",
         "service",
         "services",
@@ -210,7 +210,13 @@ def generate(chat: ChatRequest):
         "office",
         "address",
         "email",
-        "phone"
+        "phone",
+        "opsis",
+        "bidcounty",
+        "gam360",
+        "isearch",
+        "genwin",
+        "seetv"
     ]
 
     is_company_question = any(
