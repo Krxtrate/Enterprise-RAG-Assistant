@@ -1,0 +1,11 @@
+https://isearch.gitbook.io/docs
+https://isearch.gitbook.io/docs/isearch-ads/quickstart
+https://isearch.gitbook.io/docs/isearch-ads/tracking-parameters
+https://isearch.gitbook.io/docs/isearch-ads/url-macros
+https://isearch.gitbook.io/docs/isearch-ads/setup-guide
+https://isearch.gitbook.io/docs/isearch-ads/glossary
+https://opsis-pro.gitbook.io/docs
+https://opsis-pro.gitbook.io/docs/opsis-pro/how-to-advertise-from-our-platform
+https://opsis-pro.gitbook.io/docs/opsis-pro/parameters
+https://opsis-pro.gitbook.io/docs/opsis-pro/macros
+

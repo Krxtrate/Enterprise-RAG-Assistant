@@ -1,318 +1,214 @@
-# 🚀 Enterprise RAG Assistant
+# 🤖 AdCounty AI Assistant
 
-An enterprise-grade AI Assistant built using **React, FastAPI, Ollama, ChromaDB, and Retrieval-Augmented Generation (RAG)**.
+> An enterprise-grade AI Assistant powered by Retrieval-Augmented Generation (RAG), designed to deliver fast, accurate, and context-aware responses from company knowledge using local Large Language Models.
 
-This project was developed to provide accurate, company-specific responses by combining semantic search, vector databases, local LLM inference, website scraping, and intent-based smalltalk handling.
+Built during my Software Development Internship at **AdCounty Media**.
+
+---
+
+## 🚀 Overview
+
+AdCounty AI Assistant is an intelligent enterprise chatbot that enables employees and stakeholders to interact with company knowledge naturally.
+
+Instead of relying solely on a Large Language Model's built-in knowledge, the assistant retrieves relevant information from an indexed knowledge base before generating responses, ensuring accurate, up-to-date, and context-aware answers.
+
+The assistant supports product information, leadership queries, comparisons, company information, technical documentation, conversational follow-ups, and much more.
 
 ---
 
 ## ✨ Features
 
-### 🧠 Retrieval-Augmented Generation (RAG)
-
-* Website scraping pipeline
-* Knowledge ingestion workflow
-* Semantic search using vector embeddings
-* ChromaDB vector database
-* Context-aware response generation
-* Reduced hallucinations through retrieval-first architecture
-
-### 🌐 Company Knowledge Assistant
-
-* Answers company-specific questions
-* Retrieves information from scraped website content
-* Uses company perspective ("we", "our", "us")
-* Refuses to invent unavailable company information
-* Supports contact information, services, products, careers, and more
-
-### 💬 Smalltalk Engine
-
-* Multi-file JSON intent system
-* Instant responses without LLM calls
-* Greetings
-* Farewells
-* Thank-you responses
-* Feedback handling
-* Casual conversation support
-
-### 🤖 AI Chat
-
-* Powered by Ollama
-* Llama 3.1 integration
-* Conversation memory
-* General knowledge assistance
-* Programming and technical support
-
-### 🎨 Image Generation
-
-* Text-to-image generation
-* Hugging Face Inference API
-* Integrated directly into the chat interface
-
-### ⚡ Modern Frontend
-
-* React-based UI
-* Real-time chat experience
-* Responsive design
-* Clean enterprise-style interface
-* Image rendering support
+- 🧠 Retrieval-Augmented Generation (RAG)
+- 🔍 Semantic Search with ChromaDB
+- 🤖 Local LLM Inference using Ollama (Llama 3.1)
+- 🎯 Intelligent Intent Detection
+- 💬 Multi-turn Conversation Support
+- 🌐 Automated Website Scraping
+- ⚡ FastAPI Backend
+- 🎨 Responsive React Frontend
+- 📊 Product Comparison Engine
+- 👥 Leadership & Company Information Retrieval
+- 😊 Small Talk Detection
+- 🧩 Modular & Scalable Architecture
 
 ---
 
-# 🏗️ System Architecture
+## 🛠 Tech Stack
 
-User
+### Backend
+- Python
+- FastAPI
+- ChromaDB
+- Ollama
+- Sentence Transformers
+- Transformers
+- Playwright
+- BeautifulSoup
 
-↓
+### Frontend
+- React
+- JavaScript
+- CSS
 
-React Frontend
-
-↓
-
-FastAPI Backend
-
-├── Smalltalk Intent Engine
-
-├── Company Knowledge Retrieval
-
-│ └── ChromaDB
-
-├── Ollama (Llama 3.1)
-
-└── Image Generation API
-
----
-
-# 🔄 Data Pipeline
-
-### 1. Website Scraping
-
-Website Content
-
-↓
-
-scrape.py
-
-↓
-
-knowledge/
-
-### 2. Knowledge Processing
-
-knowledge/
-
-↓
-
-ingest.py
-
-↓
-
-Sentence Transformers
-
-↓
-
-ChromaDB
-
-### 3. User Query
-
-User Question
-
-↓
-
-Vector Search
-
-↓
-
-Relevant Context
-
-↓
-
-Llama 3.1
-
-↓
-
-Final Response
+### AI & Machine Learning
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Local LLMs
+- Embeddings
+- Intent Classification
 
 ---
 
-# 🛠️ Tech Stack
-
-## Frontend
-
-* React
-* Axios
-* CSS
-
-## Backend
-
-* FastAPI
-* Pydantic
-* Requests
-
-## AI & NLP
-
-* Ollama
-* Llama 3.1
-* Sentence Transformers
-* Hugging Face Inference API
-
-## Vector Database
-
-* ChromaDB
-
-## Data Processing
-
-* BeautifulSoup
-* Website Scraping
-* JSON Intent Processing
-
----
-
-# 📂 Project Structure
+## ⚙️ System Architecture
 
 ```text
-Enterprise-RAG-Assistant/
+                 User
+                   │
+                   ▼
+          React Frontend
+                   │
+                   ▼
+          FastAPI Backend
+                   │
+                   ▼
+        Intent Detection Engine
+                   │
+                   ▼
+      Conversation & Context Router
+                   │
+                   ▼
+      ChromaDB Semantic Retrieval
+                   │
+                   ▼
+          Prompt Construction
+                   │
+                   ▼
+      Ollama (Llama 3.1 Local LLM)
+                   │
+                   ▼
+             AI Response
+```
+
+---
+
+## 🧠 Supported Capabilities
+
+- 📦 Product Information
+- ⚖️ Product Comparisons
+- 🏢 Company Overview
+- 👥 Leadership Information
+- 💡 Technical Documentation
+- 📚 Knowledge Base Search
+- 🔄 Follow-up Questions
+- 🌐 General Information
+- 😊 Natural Conversation
+
+---
+
+## 📁 Project Structure
+
+```text
+Enterprise-RAG-Assistant
+│
+├── chatbot/
+│   ├── app.py
+│   ├── config.py
+│   ├── models.py
+│   ├── core/
+│   ├── services/
+│   └── database/
 │
 ├── frontend/
 │
-├── knowledge/
-│   ├── home.txt
-│   ├── about.txt
-│   ├── services.txt
-│   ├── products.txt
-│   ├── careers.txt
-│   └── contact.txt
+├── data/
+│   ├── knowledge/
+│   └── smalltalk/
 │
-├── smalltalk/
-│   ├── greetings.json
-│   ├── thanks.json
-│   ├── feedback.json
-│   ├── jokes.json
-│   └── ...
+├── scripts/
+├── chroma_db/
+├── tests/
 │
-├── scrape.py
-├── ingest.py
-├── main.py
-│
-├── .env
-├── .gitignore
+├── requirements.txt
 └── README.md
 ```
 
-# 🚀 Setup
+---
 
-## Clone Repository
+## 🚀 Getting Started
+
+### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Enterprise-RAG-Assistant.git
-
-cd Enterprise-RAG-Assistant
+git clone https://github.com/Krxtrate/AdCounty-AI-Assistant
 ```
 
-## Install Backend Dependencies
+### Backend
 
 ```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
+
+playwright install
 ```
 
-## Install Frontend Dependencies
+### Start Ollama
+
+```bash
+ollama serve
+```
+
+Pull the required model if needed:
+
+```bash
+ollama pull llama3.1:8b
+```
+
+### Run the Backend
+
+```bash
+uvicorn chatbot.app:app --reload
+```
+
+### Frontend
 
 ```bash
 cd frontend
 
 npm install
-```
 
-## Start Ollama
-
-```bash
-ollama run llama3.1:8b
-```
-
-## Run Backend
-
-```bash
-uvicorn main:app --reload
-```
-
-## Run Frontend
-
-```bash
 npm run dev
 ```
 
 ---
 
-# 🔄 Updating Company Knowledge
+## 🎯 Key Highlights
 
-### Scrape Website
-
-```bash
-python scrape.py
-```
-
-### Generate Embeddings
-
-```bash
-python ingest.py
-```
-
-### Restart Backend
-
-```bash
-uvicorn main:app --reload
-```
+- ✅ Enterprise-ready RAG architecture
+- ✅ Local AI inference (No external LLM API required)
+- ✅ Fast semantic document retrieval
+- ✅ Context-aware responses
+- ✅ Conversation memory support
+- ✅ Product recommendation & comparison
+- ✅ Knowledge ingestion pipeline
+- ✅ Clean modular architecture
 
 ---
 
-# 💡 Example Queries
+## 📈 Future Improvements
 
-### Company Questions
-
-* What services do you offer?
-* Tell me about your products.
-* How can I contact you?
-* Do you offer internships?
-* Where is your corporate office located?
-
-### General Questions
-
-* Explain Retrieval-Augmented Generation.
-* What is FastAPI?
-* Explain vector databases.
-* Write a Python sorting algorithm.
-
-### Smalltalk
-
-* Hi
-* Thank you
-* Bye
-* Good morning
-* Tell me a joke
-
-### Image Generation
-
-* Generate an image of a futuristic office.
-* Create an AI-powered marketing dashboard.
-* Generate a digital advertising campaign poster.
+- 🔐 Authentication & User Roles
+- 🧠 Hybrid Retrieval (BM25 + Vector Search)
+- ☁️ Cloud Deployment
+- 🔄 Streaming Responses
+- 🗂️ Multi-document Collections
+- 📝 Conversation History Persistence
 
 ---
 
-# 🎯 Future Improvements
-
-* Automatic website recrawling
-* Scheduled knowledge refresh
-* Source citations
-* Authentication & user roles
-* Streaming responses
-* Hybrid keyword + semantic search
-* Analytics dashboard
-* Multi-company support
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Developed By
 
 **Kritarth**
-
-Built as an enterprise AI assistant project combining modern RAG architecture, vector search, local LLM inference, and intent-based conversational AI.

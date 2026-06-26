@@ -1,129 +1,138 @@
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
+function TypingIndicator() {
+  return (
+    <div className="message assistant typing-msg">
+      <span className="typing-dot" />
+      <span className="typing-dot" />
+      <span className="typing-dot" />
+    </div>
+  );
+}
+
+function Message({ msg }) {
+  return (
+    <div className={`message ${msg.role}${msg.isError ? " error-msg" : ""}`}>
+      <div className="msg-avatar">
+        {msg.role === "assistant" ? "🤖" : "👤"}
+      </div>
+      <div className="msg-body">
+        <div className="msg-content">{msg.content}</div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
+
+  const [backendOnline, setBackendOnline] = useState(false);
+
+  useEffect(() => {
+    const checkBackend = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/");
+
+        if (response.ok) {
+          setBackendOnline(true);
+        } else {
+          setBackendOnline(false);
+        }
+      } catch {
+        setBackendOnline(false);
+      }
+    };
+
+    checkBackend();
+
+    const interval = setInterval(checkBackend, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-
   const [messages, setMessages] = useState([
     {
       role: "assistant",
       content:
-        "Hello! I am the AI assistant for ABC. Ask me anything 🚀",
+        "Hello! I'm the AI assistant for AdCounty Media. Ask me about our products, team, services, or anything else! 🚀",
     },
   ]);
 
   const messagesEndRef = useRef(null);
+  const textareaRef = useRef(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }, [messages]);
-
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, loading]);
 
   const newChat = () => {
     setMessages([
       {
         role: "assistant",
         content:
-          "Hello! I am the AI assistant for ABC. Ask me anything 🚀",
+          "Hello! I'm the AI assistant for AdCounty Media. Ask me about our products, team, services, or anything else! 🚀",
       },
     ]);
-
     setInput("");
+    textareaRef.current?.focus();
   };
 
   const generate = async () => {
-    if (!input.trim()) return;
+    const trimmed = input.trim();
+    if (!trimmed || loading) return;
 
-    const currentInput = input.trim();
-
-    const userMessage = {
-      role: "user",
-      content: currentInput,
-    };
-
+    const userMessage = { role: "user", content: trimmed };
     const updatedMessages = [...messages, userMessage];
-
-    const imageKeywords = [
-      "generate image",
-      "generate an image",
-      "create image",
-      "draw a",
-      "make an image",
-      "create a picture",
-      "generate a picture",
-      "create artwork",
-      "make a drawing",
-      "image of",
-      "picture of",
-      "generate a photo",
-      "create a photo",
-    ];
-
-    const isImageRequest = imageKeywords.some((keyword) =>
-      currentInput.toLowerCase().includes(keyword)
-    );
 
     setMessages(updatedMessages);
     setInput("");
 
+    setLoading(true);
     try {
-      setLoading(true);
+      const response = await axios.post(
+        "http://127.0.0.1:8000/generate",
+        {
+          messages: updatedMessages,
+          company: "general",
+        },
+        { timeout: 180000 }
+      );
 
-      let response;
+      const output = response?.data?.output;
 
-      if (isImageRequest) {
-        response = await axios.post(
-          "http://127.0.0.1:8000/generate-image",
-          {
-            prompt: currentInput,
-          }
-        );
-
-        if (response.data.error) {
-          throw new Error(response.data.error);
-        }
-
+      if (!output) {
+        // Backend returned 200 but no output field — show a user-visible error
         setMessages((prev) => [
           ...prev,
           {
             role: "assistant",
-            content: "[Generated Image]",
-            image: response.data.image,
+            content: "⚠️ I received an empty response. Please try again.",
+            isError: true,
           },
         ]);
-      } else {
-        response = await axios.post(
-          "http://127.0.0.1:8000/generate",
-          {
-            messages: updatedMessages,
-          }
-        );
-
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "assistant",
-            content:
-              response.data.output ||
-              "No response received.",
-          },
-        ]);
+        return;
       }
-    } catch (error) {
-      console.error(error);
 
       setMessages((prev) => [
         ...prev,
-        {
-          role: "assistant",
-          content:
-            error?.message ||
-            "❌ Failed to connect to backend.",
-        },
+        { role: "assistant", content: output },
+      ]);
+    } catch (error) {
+      console.error("Request failed:", error);
+
+      let errorMsg = "❌ Failed to connect to the backend. Make sure the server is running.";
+      if (error.code === "ECONNABORTED") {
+        errorMsg = "⏱️ Request timed out. The model is taking too long — please try again.";
+      } else if (error.response) {
+        errorMsg = `❌ Server error (${error.response.status}). Please try again.`;
+      }
+
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: errorMsg, isError: true },
       ]);
     } finally {
       setLoading(false);
@@ -137,72 +146,137 @@ function App() {
     }
   };
 
+  const suggestedQuestions = [
+    "Tell me about AdCounty Media",
+    "What products do you offer?",
+    "Who is on the leadership team?",
+    "Tell me about iSearchAds",
+  ];
+
+  const showSuggestions = messages.length === 1 && !loading;
+
   return (
     <div className="app">
-      <div className="sidebar">
-        <h2>🤖 Your AI Assistant</h2>
-        <button
-          className="new-chat"
-          onClick={newChat}
-        >
-          + New Chat
-        </button>
-      </div>
-
-      <div className="main">
-        <div className="header">
-          <h1>🚀 ABC AI</h1>
-          <p>Enterprise Knowledge Assistant</p>
+      {/* SIDEBAR */}
+      <aside className="sidebar">
+        <div className="sidebar-logo">
+            <img
+                src="/adcountylogo.png"
+                alt="AdCounty AI"
+                className="logo-image"
+            />
         </div>
 
+        <button className="new-chat-btn" onClick={newChat}>
+          <span className="new-chat-icon">＋</span>
+          New Chat
+        </button>
+
+        <div className="sidebar-divider" />
+
+        <div className="sidebar-section-label">Products</div>
+        {["BidCounty", "GenWin", "GAM360", "iSearchAds", "SeeTV", "OpSIS Pro"].map(
+          (product) => (
+            <button
+              key={product}
+              className="sidebar-product-btn"
+              onClick={() => {
+                setInput(`Tell me about ${product}`);
+                textareaRef.current?.focus();
+              }}
+            >
+              <span className="product-dot" />
+              {product}
+            </button>
+          )
+        )}
+
+        <div className="sidebar-footer">
+          <span className="sidebar-footer-text">AdCounty Media © 2026</span>
+        </div>
+      </aside>
+
+      {/* MAIN */}
+      <main className="main">
+        {/* HEADER */}
+        <header className="header">
+          <div className="header-left">
+            <div className="header-avatar">
+              <img src="/adcountychatlogo.png" alt="AdCounty" />
+            </div>
+            <div>
+              <h1 className="header-title">AdCounty Media AI Assistant</h1>
+              <p className="header-subtitle">Enterprise Knowledge Assistant</p>
+            </div>
+          </div>
+          <div className={`status-badge ${backendOnline ? "online" : "offline"}`}>
+            <span className="status-dot"></span>
+            {backendOnline ? "Online" : "Offline"}
+          </div>
+        </header>
+
+        {/* CHAT */}
         <div className="chat-container">
           {messages.map((msg, index) => (
-            <div
-              key={index}
-              className={`message ${msg.role}`}
-            >
-              {msg.content && (
-                <div>{msg.content}</div>
-              )}
-
-              {msg.image && (
-                <img
-                  src={`data:image/png;base64,${msg.image}`}
-                  alt="Generated"
-                  className="generated-image"
-                />
-              )}
-            </div>
+            <Message key={index} msg={msg} />
           ))}
 
-          {loading && (
-            <div className="message assistant">
-              🤖 Thinking...
+          {loading && <TypingIndicator />}
+
+          {showSuggestions && (
+            <div className="suggestions">
+              <p className="suggestions-label">Suggested questions</p>
+              <div className="suggestions-grid">
+                {suggestedQuestions.map((q) => (
+                  <button
+                    key={q}
+                    className="suggestion-chip"
+                    onClick={() => {
+                      setInput(q);
+                      textareaRef.current?.focus();
+                    }}
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
-          <div ref={messagesEndRef}></div>
+          <div ref={messagesEndRef} />
         </div>
 
+        {/* INPUT */}
         <div className="input-area">
-          <textarea
-            placeholder="Ask something..."
-            value={input}
-            onChange={(e) =>
-              setInput(e.target.value)
-            }
-            onKeyDown={handleKeyDown}
-          />
-
-          <button
-            className="send-btn"
-            onClick={generate}
-            disabled={loading}
-          >
-            ➤
-          </button>
+          <div className="input-wrapper">
+            <textarea
+              ref={textareaRef}
+              placeholder="Ask me about AdCounty Media, our products, team..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              rows={1}
+              disabled={loading}
+            />
+            <button
+              className="send-btn"
+              onClick={generate}
+              disabled={loading || !input.trim()}
+              aria-label="Send message"
+            >
+              {loading ? (
+                <span className="send-spinner" />
+              ) : (
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 2L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              )}
+            </button>
+          </div>
+          <p className="input-hint">Press Enter to send · Shift+Enter for new line</p>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
