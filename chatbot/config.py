@@ -10,14 +10,21 @@ safely imported by every other module without creating circular imports.
 import os
 from typing import List
 from pathlib import Path
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # ─────────────────────────────────────────────────────────────
 # EXTERNAL SERVICE URLS & MODEL SETTINGS
 # ─────────────────────────────────────────────────────────────
-
+'''
 OLLAMA_URL   = os.environ.get("OLLAMA_URL",   "http://localhost:11434")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b")
+'''
+# Hugging Face Inference API
+HF_API_TOKEN = os.environ.get("HF_API_TOKEN", "")
+HF_MODEL     = os.environ.get("HF_MODEL", "meta-llama/Llama-3.1-8B-Instruct")
+HF_API_URL   = f"https://router.huggingface.co/v1/chat/completions"
 
 # ─────────────────────────────────────────────────────────────
 # EMBEDDING MODEL

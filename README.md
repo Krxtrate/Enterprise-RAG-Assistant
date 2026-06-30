@@ -1,6 +1,6 @@
 # 🤖 AdCounty AI Assistant
 
-> An enterprise-grade AI Assistant powered by Retrieval-Augmented Generation (RAG), designed to deliver fast, accurate, and context-aware responses from company knowledge using local Large Language Models.
+> An enterprise-grade AI Assistant powered by Retrieval-Augmented Generation (RAG), designed to deliver fast, accurate, and context-aware responses from company knowledge. Runs on either a hosted LLM via the Hugging Face Inference API (no GPU or download required) a fully local model via Ollama.
 
 Built during my Software Development Internship at **AdCounty Media**.
 
@@ -20,16 +20,17 @@ The assistant supports product information, leadership queries, comparisons, com
 
 - 🧠 Retrieval-Augmented Generation (RAG)
 - 🔍 Semantic Search with ChromaDB
-- 🤖 Local LLM Inference using Ollama (Llama 3.1)
+- 🤖 LLM Inference via Hugging Face Inference API (default) or local Ollama (Llama 3.1)
 - 🎯 Intelligent Intent Detection
 - 💬 Multi-turn Conversation Support
-- 🌐 Automated Website Scraping
+- 🌐 Automated Website Scraping (accordion, tab, and dropdown-aware)
 - ⚡ FastAPI Backend
 - 🎨 Responsive React Frontend
 - 📊 Product Comparison Engine
 - 👥 Leadership & Company Information Retrieval
 - 😊 Small Talk Detection
 - 🧩 Modular & Scalable Architecture
+- 🔌 MCP Server support for external tool integration
 
 ---
 
@@ -39,11 +40,12 @@ The assistant supports product information, leadership queries, comparisons, com
 - Python
 - FastAPI
 - ChromaDB
-- Ollama
+- Hugging Face Inference API / Ollama
 - Sentence Transformers
 - Transformers
 - Playwright
 - BeautifulSoup
+- PostgreSQL + SQLAlchemy
 
 ### Frontend
 - React
@@ -53,7 +55,6 @@ The assistant supports product information, leadership queries, comparisons, com
 ### AI & Machine Learning
 - Retrieval-Augmented Generation (RAG)
 - Semantic Search
-- Local LLMs
 - Embeddings
 - Intent Classification
 
@@ -83,7 +84,7 @@ The assistant supports product information, leadership queries, comparisons, com
           Prompt Construction
                    │
                    ▼
-      Ollama (Llama 3.1 Local LLM)
+   Hugging Face Inference API  (or local Ollama)
                    │
                    ▼
              AI Response
@@ -116,6 +117,11 @@ Enterprise-RAG-Assistant
 │   ├── models.py
 │   ├── core/
 │   ├── services/
+│   │   ├── chroma.py
+│   │   ├── hf.py          # Hugging Face Inference API client (Integrated currently)
+│   │   ├── ollama.py       # Optional local inference client
+│   │   └── mcp_server.py
+│   ├── prompts/
 │   └── database/
 │
 ├── frontend/
@@ -125,9 +131,9 @@ Enterprise-RAG-Assistant
 │   └── smalltalk/
 │
 ├── scripts/
-├── chroma_db/
 ├── tests/
 │
+├── .env.example
 ├── requirements.txt
 └── README.md
 ```
@@ -136,13 +142,14 @@ Enterprise-RAG-Assistant
 
 ## 🚀 Getting Started
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Krxtrate/AdCounty-AI-Assistant
+cd AdCounty-AI-Assistant
 ```
 
-### Backend
+### 2. Set up the backend environment
 
 ```bash
 python -m venv venv
@@ -150,36 +157,74 @@ python -m venv venv
 # Windows
 venv\Scripts\activate
 
-pip install -r requirements.txt
+# macOS / Linux
+source venv/bin/activate
 
+pip install -r requirements.txt
 playwright install
 ```
 
-### Start Ollama
+### 3. Set up PostgreSQL
+
+Create a local PostgreSQL database and update the connection string in your `.env` file (see below).
+
+### 4. Configure environment variables
+
+Copy the example file and fill in your values:
 
 ```bash
-ollama serve
+cp .env.example .env
 ```
 
-Pull the required model if needed:
+```env
+# .env
+DATABASE_URL=postgresql://user:password@localhost:5432/adcounty_chatbot
+
+# Choose ONE inference backend:
+
+# Option A — Hugging Face Inference API (recommended, no GPU/download needed)
+HF_API_TOKEN=your_huggingface_token_here
+HF_MODEL=meta-llama/Llama-3.1-8B-Instruct
+
+# Option B — Local Ollama (requires Ollama installed + model downloaded)
+OLLAMA_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.1:8b
+```
+
+> **Getting a Hugging Face token:** create a free account at [huggingface.co](https://huggingface.co), generate a token at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens), and request access to the Llama 3.1 model page (approval is usually instant).
+
+### 5. Build the knowledge base
 
 ```bash
-ollama pull llama3.1:8b
+python -m scripts.scrape      # scrape source content into PostgreSQL
+python -m scripts.ingest      # chunk content into the chunks table
+python -m scripts.embedder    # embed chunks into ChromaDB
 ```
 
-### Run the Backend
+### 6A. Run with Hugging Face Inference API (default, no extra setup)
 
 ```bash
 uvicorn chatbot.app:app --reload
 ```
 
-### Frontend
+### 6B. Run with local Ollama instead
+
+```bash
+ollama serve
+ollama pull llama3.1:8b
+```
+
+Then update `chatbot/services/__init__.py` to import from `ollama.py` instead of `hf.py`, and run:
+
+```bash
+uvicorn chatbot.app:app --reload
+```
+
+### 7. Frontend
 
 ```bash
 cd frontend
-
 npm install
-
 npm run dev
 ```
 
@@ -188,12 +233,13 @@ npm run dev
 ## 🎯 Key Highlights
 
 - ✅ Enterprise-ready RAG architecture
-- ✅ Local AI inference (No external LLM API required)
+- ✅ Runs with zero local GPU requirement via Hugging Face Inference API
+- ✅ Optional fully local inference via Ollama for offline/private use
 - ✅ Fast semantic document retrieval
 - ✅ Context-aware responses
 - ✅ Conversation memory support
 - ✅ Product recommendation & comparison
-- ✅ Knowledge ingestion pipeline
+- ✅ Knowledge ingestion pipeline with accordion/tab-aware scraping
 - ✅ Clean modular architecture
 
 ---
@@ -211,4 +257,4 @@ npm run dev
 
 ## 👨‍💻 Developed By
 
-**Kritarth**
+**Kritarth Sharan**

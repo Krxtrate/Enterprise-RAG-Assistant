@@ -12,6 +12,7 @@ Responsibilities:
 Imports: config only (no other internal modules → no circular risk).
 """
 
+'''
 import asyncio
 import time
 from typing import List
@@ -157,3 +158,4 @@ def log_timing_summary(
         f"  Total tokens est : {prompt_chars // 4 + num_predict}\n"
         f"────────────────────────────────────────────────\n"
     )
+    '''

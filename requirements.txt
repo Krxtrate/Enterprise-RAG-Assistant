@@ -30,6 +30,13 @@ pydantic==2.13.4
 
 python-multipart==0.0.32
 
+#Database=================================
+
+asyncpg
+psycopg2-binary
+SQLAlchemy
+alembic
+
 #Dependencies=============================
 
 anyio
@@ -41,9 +48,10 @@ click
 watchfiles
 websockets
 h11
-alembic
 
-#Optional=================================
+#Optional — local inference (Ollama)=======
+# Only needed if you want to run the LLM locally instead of via
+# Hugging Face Inference API. See README for setup instructions.
 
 ollama==0.6.2
 
@@ -52,6 +60,3 @@ ollama==0.6.2
 fastmcp
 fastmcp-slim
 mcp
-asyncpg
-psycopg2-binary
-SQLAlchemy

@@ -145,7 +145,7 @@ def compute_desired_predict(intent: dict) -> int:
     if intent["is_comparison"]:
         return 1200   # needs more tokens to cover both products side-by-side
     if intent["mentioned_product"] or intent["is_team_query"]:
-        return 600
+        return 1000
     return 400
 
 

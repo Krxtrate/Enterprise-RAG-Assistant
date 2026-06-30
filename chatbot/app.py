@@ -26,7 +26,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # ── Internal modules ──────────────────────────────────────────────────────────
-from chatbot.config import THREAD_POOL_MAX_WORKERS, OLLAMA_MODEL, OLLAMA_URL
+from chatbot.config import THREAD_POOL_MAX_WORKERS, HF_API_TOKEN, HF_API_URL, HF_MODEL
 from chatbot.models import ChatRequest
 
 from chatbot.core.intent import detect_intent
@@ -41,7 +41,16 @@ from chatbot.core.router import (
 from chatbot.core.smalltalk import match_smalltalk, pick_smalltalk_reply
 from chatbot.core.utils import clean_llm_output, render_smalltalk
 
+'''
 from chatbot.services.ollama import (
+    call_ollama,
+    compute_ctx,
+    log_timing_summary,
+    prewarm_ollama,
+)
+'''
+
+from chatbot.services.hf import (
     call_ollama,
     compute_ctx,
     log_timing_summary,
@@ -236,7 +245,7 @@ async def _generate(chat: ChatRequest):
 
     # ── 10. Ollama payload ───────────────────────────────────────────────────
     payload = {
-        "model":      OLLAMA_MODEL,
+        "model":      HF_MODEL,
         "messages":   ollama_messages,
         "stream":     False,
         "keep_alive": "30m",
