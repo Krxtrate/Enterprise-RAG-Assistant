@@ -16,6 +16,7 @@ import httpx
 from chatbot.config import HF_MODEL, HF_API_URL
 
 _hf_sem = asyncio.Semaphore(3)  # HF API supports concurrent requests unlike local Ollama
+HF_TIMEOUT_SECONDS = 20.0
 
 HF_API_TOKEN = os.environ.get("HF_API_TOKEN", "")
 
@@ -33,6 +34,7 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
     Translate an Ollama-style payload to HF Inference API format and call it.
     Returns an Ollama-compatible response dict so app.py needs zero changes.
     """
+    effective_timeout = min(timeout, HF_TIMEOUT_SECONDS)
     if not HF_API_TOKEN:
         raise RuntimeError("HF_API_TOKEN is not set")
 
@@ -47,10 +49,10 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
     }
 
     async with _hf_sem:
-        print("HF API request sending...")
+        print(f"HF API request sending with timeout={effective_timeout}s...")
         t0 = time.perf_counter()
         try:
-            async with httpx.AsyncClient(timeout=timeout) as client:
+            async with httpx.AsyncClient(timeout=effective_timeout) as client:
                 resp = await client.post(
                     HF_API_URL,
                     headers={

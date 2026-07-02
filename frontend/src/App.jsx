@@ -166,7 +166,6 @@ function App() {
     "Tell me about AdCounty Media",
     "What products do you offer?",
     "Who is on the leadership team?",
-    "Tell me about iSearchAds",
   ];
 
   const showSuggestions = messages.length === 1 && !loading;
@@ -221,7 +220,7 @@ function App() {
               <img src="/adcountychatlogo.png" alt="AdCounty" />
             </div>
             <div>
-              <h1 className="header-title">AdCounty Media AI Assistant</h1>
+              <h1 className="header-title">AdCounty Media AI </h1>
               <p className="header-subtitle">Enterprise Knowledge Assistant</p>
             </div>
           </div>

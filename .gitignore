@@ -28,4 +28,4 @@ build/
 dist/
 
 # Chroma (optional)
-# chroma_db/
+chroma_db/

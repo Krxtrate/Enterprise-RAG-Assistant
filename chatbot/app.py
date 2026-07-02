@@ -117,10 +117,11 @@ def home():
 async def generate(chat: ChatRequest):
     try:
         return await _generate(chat)
-    except Exception:
+    except Exception as exc:
         print("UNHANDLED ERROR IN /generate:")
         traceback.print_exc()
-        return {"output": "Sorry, something went wrong. Please try again."}
+        message = str(exc) or "Sorry, something went wrong. Please try again."
+        return {"output": message, "notice": None}
 
 
 # ─────────────────────────────────────────────────────────────
@@ -273,13 +274,13 @@ async def _generate(chat: ChatRequest):
         result = await call_ollama(payload)
     except RuntimeError as e:
         print(f"BOTH BACKENDS FAILED: {e}")
-        return {"output": "The AI service is currently unavailable. Please try again in a moment."}
+        return {"output": "Sorry, we’re not available right now. Please try again shortly.", "notice": None}
     except (httpx.TimeoutException, httpx.RequestError):
-        return {"output": "The AI service is currently unavailable. Please try again in a moment."}
+        return {"output": "Sorry, we’re not available right now. Please try again shortly.", "notice": None}
     except Exception as e:
         print(f"UNEXPECTED ERROR: {e}")
         traceback.print_exc()
-        return {"output": "Sorry, something went wrong. Please try again."}
+        return {"output": "Sorry, something went wrong. Please try again.", "notice": None}
     ollama_time = time.perf_counter() - t_ollama_start
     print(f"LLM TIME: {ollama_time:.3f}s")
 
@@ -318,11 +319,8 @@ async def _generate(chat: ChatRequest):
 
     # ── 14. Surface a frontend notice if this response came from the
     #         local Ollama fallback rather than the HF Inference API ────────
-    if result.get("_backend") == "ollama":
-        response["notice"] = (
-            "Running on local inference — the free Hugging Face tier limit "
-            "was reached, so responses may be slower than usual."
-        )
+    if result.get("_notice"):
+        response["notice"] = result.get("_notice")
 
     return response
 

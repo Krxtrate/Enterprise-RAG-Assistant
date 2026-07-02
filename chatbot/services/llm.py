@@ -17,12 +17,18 @@ import time
 
 import httpx
 
+from chatbot.config import OLLAMA_URL
 from chatbot.services import hf
 from chatbot.services import ollama as ollama_backend
 
 _hf_available = True
 _fallback_since: float | None = None
 HF_RETRY_INTERVAL_SECONDS = 24 * 60 * 60  # retry HF once a day
+HF_FALLBACK_NOTICE = (
+    "The Hugging Face free tier is currently unavailable or slow, so the model will take a bit longer "
+    "while we respond locally."
+)
+UNAVAILABLE_NOTICE = "Sorry, we’re not available right now. Please try again shortly."
 
 
 def prewarm_ollama() -> None:
@@ -43,6 +49,16 @@ def _maybe_auto_reset() -> None:
             _fallback_since = None
 
 
+async def _ensure_ollama_available() -> bool:
+    try:
+        async with httpx.AsyncClient(timeout=5.0) as client:
+            resp = await client.get(f"{OLLAMA_URL}/api/tags")
+            return resp.status_code == 200
+    except Exception as exc:
+        print(f"Ollama availability check failed: {exc}")
+        return False
+
+
 async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
     """
     Try HF first. On failure, fall back to local Ollama (which must be
@@ -57,6 +73,7 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
         try:
             result = await hf.call_ollama(payload, timeout=timeout)
             result["_backend"] = "hf"
+            result["_notice"] = None
             return result
         except (httpx.TimeoutException, httpx.RequestError, RuntimeError) as e:
             print(f"HF API failed, falling back to local Ollama: {e}")
@@ -68,20 +85,18 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
             _fallback_since = time.time()
 
     # ── Fallback path — local Ollama on this server ──────────────────
+    ollama_ready = await _ensure_ollama_available()
+    if not ollama_ready:
+        raise RuntimeError("Sorry, we’re not available right now. Please try again shortly.")
+
     try:
         result = await ollama_backend.call_ollama(payload, timeout=timeout)
         result["_backend"] = "ollama"
+        result["_notice"] = HF_FALLBACK_NOTICE
         return result
     except (httpx.ConnectError, httpx.TimeoutException) as e:
-        # Ollama itself isn't reachable — likely not installed/running
-        # (expected for public repo clones without a local model)
         print(f"Ollama fallback also unavailable: {e}")
-        raise RuntimeError(
-            "Both Hugging Face Inference API and local Ollama are "
-            "unavailable. If running this outside the AdCounty server, "
-            "make sure Ollama is installed and running, or wait for the "
-            "HF rate limit to reset."
-        )
+        raise RuntimeError(UNAVAILABLE_NOTICE)
 
 
 def compute_ctx(ollama_messages: list, desired_predict: int) -> tuple[int, int]:

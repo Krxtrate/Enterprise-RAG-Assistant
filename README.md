@@ -140,13 +140,14 @@ Enterprise-RAG-Assistant
 │   ├── models.py
 │   ├── core/
 │   ├── prompts/
-│   ├── services/
-│   │   ├── chroma.py
-│   │   ├── llm.py          # Failover router — app.py imports ONLY from here
-│   │   ├── hf.py            # Hugging Face Inference API client
-│   │   ├── ollama.py        # Local Ollama client (fallback)
-│   │   └── mcp_server.py
-│   └── database/
+│   ├── tools/                # Future MCP tools 
+│   ├── database/
+│   └── services/
+│        ├── chroma.py
+│        ├── llm.py           # Failover router — app.py imports ONLY from here
+│        ├── hf.py            # Hugging Face Inference API client
+│        ├── ollama.py        # Local Ollama client (fallback)
+│        └── mcp_server.py
 │
 ├── frontend/
 │
@@ -155,6 +156,10 @@ Enterprise-RAG-Assistant
 │   └── smalltalk/
 │
 ├── scripts/
+│   ├── scrape.py
+│   ├── ingest.py
+│   └── embedder.py
+│
 ├── tests/
 │
 ├── .env.example

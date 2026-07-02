@@ -18,15 +18,15 @@ load_dotenv()
 # EXTERNAL SERVICE URLS & MODEL SETTINGS
 # ─────────────────────────────────────────────────────────────
 
+# Hugging Face Inference API — primary backend, tried first.
+HF_API_TOKEN = os.environ.get("HF_API_TOKEN")
+HF_MODEL     = os.environ.get("HF_MODEL")
+HF_API_URL   = "https://router.huggingface.co/v1/chat/completions"
+
 # Local Ollama — used as automatic fallback if HF Inference API fails.
 # Must be reachable on this server for the fallback to actually work.
-OLLAMA_URL   = os.environ.get("OLLAMA_URL",   "http://localhost:11434")
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b")
-
-# Hugging Face Inference API — primary backend, tried first.
-HF_API_TOKEN = os.environ.get("HF_API_TOKEN", "")
-HF_MODEL     = os.environ.get("HF_MODEL", "meta-llama/Llama-3.1-8B-Instruct")
-HF_API_URL   = "https://router.huggingface.co/v1/chat/completions"
+OLLAMA_URL   = "http://localhost:11434"
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL")
 
 # ─────────────────────────────────────────────────────────────
 # EMBEDDING MODEL
