@@ -27,5 +27,5 @@ Thumbs.db
 build/
 dist/
 
-# Chroma (optional)
+# Chroma 
 chroma_db/

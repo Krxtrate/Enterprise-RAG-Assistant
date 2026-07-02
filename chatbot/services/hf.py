@@ -29,7 +29,7 @@ def prewarm_ollama() -> None:
         print("HF Inference API ready.")
 
 
-async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
+async def call_llm(payload: dict, timeout: float = 120.0) -> dict:
     """
     Translate an Ollama-style payload to HF Inference API format and call it.
     Returns an Ollama-compatible response dict so app.py needs zero changes.

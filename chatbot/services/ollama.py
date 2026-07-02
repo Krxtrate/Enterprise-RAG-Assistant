@@ -65,13 +65,19 @@ def prewarm_ollama() -> None:
 # CALLER
 # ─────────────────────────────────────────────────────────────
 
-async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
+async def call_llm(payload: dict, timeout: float = 120.0) -> dict:
     """
     POST to Ollama under the global semaphore.
     - Semaphore ensures only one inference runs at a time → no connection resets.
     - exc.__class__.__name__ logged so the error is never silently blank.
     - Raises on any network or HTTP error; caller handles user-facing message.
     """
+    # Force the correct local model name regardless of what's already in
+    # payload["model"] — the payload may have been built while HF was still
+    # the active backend (e.g. "meta-llama/Llama-3.1-8B-Instruct"), which
+    # Ollama doesn't recognize and will 404 on.
+    payload = {**payload, "model": OLLAMA_MODEL}
+
     async with _ollama_sem:
         print("Ollama semaphore acquired — sending request...")
         t0 = time.perf_counter()
@@ -161,4 +167,3 @@ def log_timing_summary(
         f"  Total tokens est : {prompt_chars // 4 + num_predict}\n"
         f"────────────────────────────────────────────────\n"
     )
-    

@@ -59,7 +59,7 @@ async def _ensure_ollama_available() -> bool:
         return False
 
 
-async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
+async def call_llm(payload: dict, timeout: float = 120.0) -> dict:
     """
     Try HF first. On failure, fall back to local Ollama (which must be
     running on this server) and tag the response so app.py can surface
@@ -71,7 +71,7 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
 
     if _hf_available:
         try:
-            result = await hf.call_ollama(payload, timeout=timeout)
+            result = await hf.call_llm(payload, timeout=timeout)
             result["_backend"] = "hf"
             result["_notice"] = None
             return result
@@ -90,11 +90,11 @@ async def call_ollama(payload: dict, timeout: float = 120.0) -> dict:
         raise RuntimeError("Sorry, we’re not available right now. Please try again shortly.")
 
     try:
-        result = await ollama_backend.call_ollama(payload, timeout=timeout)
+        result = await ollama_backend.call_llm(payload, timeout=timeout)
         result["_backend"] = "ollama"
         result["_notice"] = HF_FALLBACK_NOTICE
         return result
-    except (httpx.ConnectError, httpx.TimeoutException) as e:
+    except (httpx.ConnectError, httpx.TimeoutException, RuntimeError) as e:
         print(f"Ollama fallback also unavailable: {e}")
         raise RuntimeError(UNAVAILABLE_NOTICE)
 

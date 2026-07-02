@@ -42,7 +42,7 @@ from chatbot.core.smalltalk import match_smalltalk, pick_smalltalk_reply
 from chatbot.core.utils import clean_llm_output, render_smalltalk
 
 from chatbot.services.llm import (
-    call_ollama,
+    call_llm,
     compute_ctx,
     log_timing_summary,
     prewarm_ollama,
@@ -271,7 +271,7 @@ async def _generate(chat: ChatRequest):
     # ── 11. Call LLM (HF first, auto-fallback to Ollama on failure) ──────────
     t_ollama_start = time.perf_counter()
     try:
-        result = await call_ollama(payload)
+        result = await call_llm(payload)
     except RuntimeError as e:
         print(f"BOTH BACKENDS FAILED: {e}")
         return {"output": "Sorry, we’re not available right now. Please try again shortly.", "notice": None}
